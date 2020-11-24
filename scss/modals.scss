@@ -1,0 +1,95 @@
+@import "config";
+
+.modals {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 103;
+  max-width: 636px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.modals__head {
+  position: relative;
+  background: #68c2d0;
+  box-shadow: 0px 0px 15px rgba(104, 194, 208, 0.4);
+  border-radius: 7px 7px 0px 0px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modals__title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.modals__close {
+  background: none;
+  border: none;
+  transition: all 0.2s linear;
+  position: absolute;
+  right: 36px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.modals__body {
+  padding-top: 22px;
+  padding-bottom: 32px;
+  padding-left: 62px;
+  padding-right: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modals__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 202px;
+  width: 100%;
+}
+
+.modals__column {
+  text-align: right;
+  &--first {
+    width: 70%;
+    text-align: left;
+    .modals__column__title {
+      margin-bottom: 32px;
+      text-align: left;
+    }
+
+    .modals__column__line {
+      margin-bottom: 38px;
+    }
+  }
+
+  .cabinet__input {
+    max-width: 49px;
+  }
+}
+
+.modals__column__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 25px;
+  text-align: right;
+}
+
+.modals__column__line {
+  margin-bottom: 23px;
+}

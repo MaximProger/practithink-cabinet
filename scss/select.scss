@@ -34,6 +34,25 @@
       color: #2f2f2f;
     }
   }
+
+  &--disabled {
+    pointer-events: none;
+
+    .select__wrapper {
+      border-color: #c4c4c4;
+      background: #f6f6f6;
+    }
+
+    .select__title {
+      color: #c4c4c4;
+    }
+
+    .select__arrow {
+      path {
+        fill: #cfcfcf;
+      }
+    }
+  }
 }
 
 .select__icon {
@@ -72,6 +91,12 @@
   &.active {
     font-weight: 400;
     color: #2f2f2f;
+    font-size: 14px;
+    line-height: 19px;
+    background: #ecf7f9;
+    border-radius: 20px;
+    padding: 4px 6px;
+    margin-left: -6px;
   }
 }
 
@@ -113,4 +138,44 @@
     opacity: 0.5;
     pointer-events: none;
   }
+}
+
+.select__checkbox__item {
+  display: block;
+  margin-bottom: 19px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &.active {
+    pointer-events: none;
+    .select__label::before {
+      border-color: #68c2d0;
+      background-color: #68c2d0;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.select__label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  transition: all 0.2s linear;
+}
+.select__label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  margin-right: 11px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }

@@ -1,0 +1,71 @@
+@import "config";
+
+.colors__item {
+  width: 29px;
+  height: 29px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border: none;
+  padding: 0;
+  transition: all 0.2s linear;
+
+  &:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  &.active {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    background: #fff;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.colors__circle {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #2f2f2f;
+
+  &--green {
+    background: #9dd765;
+  }
+
+  &--purple {
+    background: #eecdfe;
+  }
+
+  &--yellow {
+    background: #fccc53;
+  }
+
+  &--orange {
+    background: #ffb27d;
+  }
+
+  &--violet {
+    background: #9ea7c6;
+  }
+
+  &--blue {
+    background: #497fa0;
+  }
+
+  &--red {
+    background: #ee623c;
+  }
+}
+
+.colors__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

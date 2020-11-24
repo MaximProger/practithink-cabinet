@@ -419,3 +419,149 @@
   line-height: 19px;
   margin-left: 6.6px;
 }
+
+@media (max-width: $mobile) {
+  .practies__item {
+    flex-direction: column;
+    height: auto;
+
+    &.active {
+      height: auto;
+    }
+  }
+
+  .practies__item___content {
+    padding-bottom: 20px;
+  }
+
+  .practies__item__left {
+    height: 40px;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .practies__top {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .practies__top__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .practies__title {
+    margin-bottom: 0;
+  }
+
+  .practies__top__right {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .practies__top__item {
+    margin-left: 0;
+    &--special {
+      width: auto;
+    }
+  }
+
+  .practices__btn {
+    transform: rotate(90deg);
+    top: 33px;
+    right: 23px;
+  }
+
+  .practies__top__item__results {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .practies__top__percent {
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+  .practices__middle {
+    align-items: center;
+  }
+
+  .practices__bot__left.no-xs {
+    display: none;
+  }
+
+  .practices__middle {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .practies__item.active .practies__top__results__wrapper {
+    display: flex;
+  }
+
+  .practices__middle__right {
+    order: 1;
+    width: 100%;
+    margin-top: 10px;
+
+    .practies__top__results__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .practies__top__item__wrapper {
+      width: 100%;
+    }
+  }
+
+  .practices__middle__left {
+    order: 2;
+  }
+
+  .practices__bot__left {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .practices__bot__right {
+    width: 100%;
+  }
+
+  .practices__bot__right__footer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btn.practices__item__btn {
+    margin-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .practices__top__head__wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .practices__bot__right__head {
+    text-align: center;
+  }
+
+  .practices__options {
+    top: 70px;
+  }
+}

@@ -1,0 +1,70 @@
+@import "config";
+
+.pannel__wrapper {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &--active {
+    display: flex;
+  }
+
+  &--cabinet {
+    margin-bottom: 26px;
+  }
+}
+
+.pannel__icon {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  margin-right: 4px;
+  background: url("../images/dest/icons/plus.svg") no-repeat center;
+  transition: all 0.2s linear;
+}
+
+.btn.pannel__btn {
+  background: #ecf7f9;
+  color: #0e80a4;
+  border-color: #ecf7f9;
+  font-size: 16px;
+  line-height: 20px;
+  height: 25px;
+  width: auto;
+  margin-right: 14px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:active,
+  &:hover {
+    background: #ecf7f9;
+    color: #0e80a4;
+    border-color: #ecf7f9;
+    opacity: 0.7;
+  }
+
+  &--active {
+    color: #fff;
+    background: #0e80a4;
+    border-color: #0e80a4;
+
+    .pannel__icon {
+      background: url("../images/dest/icons/ok.svg") no-repeat center;
+    }
+
+    &:hover {
+      color: #fff;
+      background: #0e80a4;
+      border-color: #0e80a4;
+
+      .pannel__icon {
+        background: url("../images/dest/icons/ok.svg") no-repeat center;
+      }
+    }
+  }
+}

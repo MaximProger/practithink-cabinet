@@ -132,7 +132,7 @@
 							</div>
 						</div>
 					</div>
-					<main role="main" class="main col-md-9 ml-sm-auto col-lg-10 px-4">
+					<main role="main" class="main col-md-12 ml-sm-auto col-lg-10 px-4">
 						<div class="cabinet__body">
 							<div class="cabinet__wrapper">
 								<header class="header">
@@ -178,6 +178,10 @@
 									</div>
 								</div>
 
+								<button type="button" class="btn sibar__btn" id="openSideBar">
+									Open Sidebar
+								</button>
+
 								<div class="practies">
 									<div class="practies__inner">
 										<div class="sort">
@@ -206,7 +210,11 @@
 															<div class="select__title">
 																Subject
 															</div>
-															<img class="select__arrow" src="./images/dest/arrow.svg" alt="Arrow">
+															<svg class="select__arrow" width="16" height="10" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M0 .632C0 .507.034.385.097.281A.592.592 0 01.356.048.53.53 0 01.689.012a.563.563 0 01.295.173l6.7 7.347L14.381.185a.55.55 0 01.406-.177.552.552 0 01.402.185.665.665 0 01.17.442.666.666 0 01-.162.444L8.09 8.873a.552.552 0 01-.408.185.552.552 0 01-.408-.185L.17 1.079A.64.64 0 01.044.874.686.686 0 010 .632z"
+																	fill="#0E80A4" /></svg>
 														</div>
 
 														<div class="select__list">
@@ -220,7 +228,11 @@
 															<div class="select__title">
 																Grade
 															</div>
-															<img class="select__arrow" src="./images/dest/arrow.svg" alt="Arrow">
+															<svg class="select__arrow" width="16" height="10" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M0 .632C0 .507.034.385.097.281A.592.592 0 01.356.048.53.53 0 01.689.012a.563.563 0 01.295.173l6.7 7.347L14.381.185a.55.55 0 01.406-.177.552.552 0 01.402.185.665.665 0 01.17.442.666.666 0 01-.162.444L8.09 8.873a.552.552 0 01-.408.185.552.552 0 01-.408-.185L.17 1.079A.64.64 0 01.044.874.686.686 0 010 .632z"
+																	fill="#0E80A4" /></svg>
 														</div>
 
 														<div class="select__list">
@@ -234,7 +246,11 @@
 															<div class="select__title">
 																Status
 															</div>
-															<img class="select__arrow" src="./images/dest/arrow.svg" alt="Arrow">
+															<svg class="select__arrow" width="16" height="10" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M0 .632C0 .507.034.385.097.281A.592.592 0 01.356.048.53.53 0 01.689.012a.563.563 0 01.295.173l6.7 7.347L14.381.185a.55.55 0 01.406-.177.552.552 0 01.402.185.665.665 0 01.17.442.666.666 0 01-.162.444L8.09 8.873a.552.552 0 01-.408.185.552.552 0 01-.408-.185L.17 1.079A.64.64 0 01.044.874.686.686 0 010 .632z"
+																	fill="#0E80A4" /></svg>
 														</div>
 
 														<div class="select__list">
@@ -461,6 +477,18 @@
 														<div class="practices__middle__left">
 															<p class="practices__text__top">Created by</p>
 															<p class="practices__text__bot">Liza White(edited by you) </p>
+
+															<div class="practices__bot__left xs">
+																<div class="practices__bot__item">
+																	<p class="practices__text__top">Added</p>
+																	<p class="practices__text__bot">12/07/20</p>
+																</div>
+
+																<div class="practices__bot__item">
+																	<p class="practices__text__top">Practithink rating</p>
+																	<p class="practices__text__bot">***** (802)</p>
+																</div>
+															</div>
 														</div>
 														<div class="practices__middle__right">
 
@@ -495,7 +523,7 @@
 													</div>
 
 													<div class="practices__bot">
-														<div class="practices__bot__left">
+														<div class="practices__bot__left no-xs">
 															<div class="practices__bot__item">
 																<p class="practices__text__top">Added</p>
 																<p class="practices__text__bot">12/07/20</p>
@@ -713,6 +741,8 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="mask"></div>
 
 	<!-- jQuery -->
 	<script src="./js/include/jquery.min.js"></script>

@@ -1,0 +1,92 @@
+@import "config";
+
+.task {
+  padding-top: 33px;
+}
+
+.task__line {
+  max-width: 345px;
+
+  &--pannel {
+    margin-bottom: 18px !important;
+  }
+
+  &--large {
+    width: 272px;
+
+    .select {
+      width: 100% !important;
+    }
+  }
+
+  &--small {
+    max-width: 80px;
+    margin-bottom: 8px !important;
+  }
+}
+
+.task__line__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .select {
+    margin-right: 14px;
+    width: 165px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.tasl__line__big {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .task__line {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--hide {
+    display: none;
+  }
+}
+
+.task__add {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    margin-right: 12px;
+  }
+
+  span {
+    transition: all 0.2s linear;
+    border-bottom: 1px solid #2f2f2f;
+  }
+
+  &:hover {
+    span {
+      border-color: transparent;
+    }
+  }
+}
+
+.task__btn__wrapper {
+  margin-top: 34px;
+}
+
+@media (max-width: $mobile) {
+  .tasl__line__big {
+    flex-wrap: wrap;
+  }
+}
