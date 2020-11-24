@@ -1,0 +1,36 @@
+@import "config";
+
+.sort {
+  margin-top: 54px;
+  margin-bottom: 20px;
+}
+
+.sort__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort__left {
+  width: 50%;
+
+  .select {
+    width: 161px;
+  }
+}
+
+.sort__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .select {
+    width: 165px;
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
