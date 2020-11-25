@@ -203,7 +203,7 @@
                                 fraction
                               </div>
                             </div>
-                            <button class="tables__head__btn tables__head__btn--hide" type="button">
+                            <button class="tables__head__btn" type="button">
                               <img src="./images/dest/icons/edit--tables.svg" alt="Edit" class="tables__edit">
                               <span>Edit</span>
                             </button>
@@ -346,89 +346,46 @@
                       </div>
                     </div>
 
-                    <!-- Decide -->
-                    <div class="decide">
-                      <div class="decide__inner">
-                        <h3 class="decide__title">
-                          Question goes here. 2+2=?
-                        </h3>
-
-                        <div class="decide__wrapper">
-                          <div class="decide__item">
-                            <div class="decide__col">
-                              <span class="decide__number">1</span>
-                              <span class="decide__line"></span>
-                              <span class="decide__number">3</span>
-                            </div>
-                            <span class="decide__mark">+</span>
-                            <div class="decide__col">
-                              <span class="decide__number">1</span>
-                              <span class="decide__line"></span>
-                              <span class="decide__number">3</span>
-                            </div>
-                            <span class="decide__mark">=</span>
-                            <div class="decide__col decide__col--inputs">
-                              <input type="number" class="form-control cabinet__input decide__input" name="decide-1"
-                                id="decide-1" value="2" required>
-                              <input type="number" class="form-control cabinet__input decide__input" name="decide-2"
-                                id="decide-2" value="6" required>
-                            </div>
+                    <div class="final__fields">
+                      <form action="/" name="finalForm" id="finalForm" class="final__form">
+                        <div class="cabinet__item">
+                          <div class="cabinet__checkbox__item">
+                            <input type="checkbox" class="cabinet__checkbox" id="publish" name="publish">
+                            <label class="cabinet__label" for="publish">Publish to PractiThink marketplace</label>
                           </div>
+                        </div>
 
-                          <div class="decide__item">
-                            <div class="decide__col">
-                              <span class="decide__number">1</span>
-                              <span class="decide__line"></span>
-                              <span class="decide__number">4</span>
-                            </div>
-                            <span class="decide__mark">+</span>
-                            <div class="decide__col">
-                              <span class="decide__number">1</span>
-                              <span class="decide__line"></span>
-                              <span class="decide__number">3</span>
-                            </div>
-                            <span class="decide__mark">=</span>
-                            <div class="decide__col decide__col--inputs">
-                              <input type="number" class="form-control cabinet__input decide__input" name="decide-3"
-                                id="decide-3" value="2" required>
-                              <input type="number" class="form-control cabinet__input decide__input" name="decide-4"
-                                id="decide-4" value="7" required>
-                            </div>
+                        <div class="cabinet__item">
+                          <div class="cabinet__intro__title">
+                            Marketplace
                           </div>
-
-                          <div class="decide__item">
-                            <div class="decide__col">
-                              <span class="decide__number">1</span>
-                              <span class="decide__line"></span>
-                              <span class="decide__number">3</span>
+                          <div class="final__fields__wrapper">
+                            <div class="cabinet__checkbox__item">
+                              <input type="radio" class="cabinet__checkbox" id="premium" name="marketplace" checked>
+                              <label class="cabinet__label" for="premium">Premium</label>
                             </div>
-                            <span class="decide__mark">+</span>
-                            <div class="decide__col">
-                              <span class="decide__number">1</span>
-                              <span class="decide__line"></span>
-                              <span class="decide__number">3</span>
-                            </div>
-                            <span class="decide__mark">=</span>
-                            <div class="decide__col decide__col--inputs">
-                              <input type="number" class="form-control cabinet__input decide__input" name="decide-5"
-                                id="decide-5" value="2" required>
-                              <input type="number" class="form-control cabinet__input decide__input" name="decide-6"
-                                id="decide-6" value="6" required>
+                            <div class="cabinet__checkbox__item">
+                              <input type="radio" class="cabinet__checkbox" id="free" name="marketplace">
+                              <label class="cabinet__label" for="free">Free</label>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="cabinet__btn__wrapper final__btn__wrapper">
-                        <button type="button" class="btn btn--opacity cabinet__btn  cabinet__btn__edit">
-                          <svg class="cabinet__btn__icon" width="26" height="11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.52 5.5h23.4m-23.4 0l3.6 4.5m-3.6-4.5L5.12 1" stroke="#0E80A4" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" /></svg>
-                          <span class="cabinet__btn__text">Edit</span>
-                        </button>
-                        <button type="submit" name="finalSubmit" class="btn cabinet__btn">Save</button>
-                      </div>
+                        <div class="cabinet__item">
+                          <div class="cabinet__intro__title">
+                            Price
+                          </div>
+                          <input type="number" class="form-control cabinet__input final__input" name="price" id="price"
+                            placeholder="$10" required>
+                        </div>
+
+                        <div class="cabinet__btn__wrapper final__btn__wrapper final__btn__wrapper--2">
+                          <button type="button" class="btn btn--opacity cabinet__btn ">
+                            Edit
+                          </button>
+                          <button type="submit" name="finalSubmit" class="btn cabinet__btn">Save</button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>

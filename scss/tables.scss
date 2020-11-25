@@ -67,8 +67,9 @@
   line-height: 1;
 
   span {
+    display: inline-block;
     transition: all 0.2s linear;
-    border-bottom: 1px soli #fff;
+    border-bottom: 1px solid #fff;
 
     &:hover {
       border-color: transparent;
