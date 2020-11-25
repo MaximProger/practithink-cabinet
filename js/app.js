@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Sidebar Open || Close
-  $("#sidebar").click(function () {
-    $(this).toggleClass("sidebar--hide");
+  $(".logo").click(function () {
+    $("#sidebar").toggleClass("sidebar--hide");
     $(".logo__img").toggleClass("active");
   });
 

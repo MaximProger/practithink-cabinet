@@ -1,0 +1,87 @@
+@import "config";
+
+.decide {
+  margin-top: 21px;
+}
+
+.decide__inner {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  padding: 31px 24px;
+}
+
+.decide__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 34px;
+}
+
+.decide__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0 27px;
+}
+
+.decide__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--inputs {
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+.decide__mark {
+  margin: 0 5px;
+}
+
+.decide__line {
+  display: inline-block;
+  width: 17px;
+  height: 1px;
+  margin: 5px 0;
+  background: #000;
+}
+
+.cabinet__input.decide__input {
+  background: #fbfcfc;
+  border: 0.5px solid #68c2d0;
+  border-radius: 0;
+  padding: 0;
+  width: 21px;
+  height: 22px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: #0e80a4;
+}
+
+.decide__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: $mobile) {
+  .decide__wrapper {
+    flex-direction: column;
+  }
+
+  .decide__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

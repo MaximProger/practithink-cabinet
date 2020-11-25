@@ -9,6 +9,9 @@
 @import "task";
 @import "pannel";
 @import "modals";
+@import "final";
+@import "tables";
+@import "decide";
 
 body {
   min-width: 320px;
@@ -19,6 +22,10 @@ body {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
+
+  &.fixed {
+    overflow-y: hidden;
+  }
 }
 
 input::-webkit-outer-spin-button,
@@ -321,6 +328,33 @@ select {
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
     margin: 0 7.5px;
   }
+}
+
+.btn.cabinet__btn__edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    .cabinet__btn__icon {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+.cabinet__btn__icon {
+  margin-right: 6px;
+
+  path {
+    transition: all 0.2s linear;
+  }
+}
+
+.cabinet__btn__text {
+  display: inline-block;
+  margin-left: 6px;
 }
 
 @media (max-width: $tablet) {

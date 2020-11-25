@@ -10,6 +10,11 @@
   max-width: 636px;
   width: 100%;
   border-radius: 7px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 }
 
 .modals__head {
@@ -58,24 +63,21 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 202px;
   width: 100%;
+
+  &--single {
+    justify-content: center;
+  }
+}
+
+.modals__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .modals__column {
-  text-align: right;
-  &--first {
-    width: 70%;
-    text-align: left;
-    .modals__column__title {
-      margin-bottom: 32px;
-      text-align: left;
-    }
-
-    .modals__column__line {
-      margin-bottom: 38px;
-    }
-  }
+  width: 45%;
 
   .cabinet__input {
     max-width: 49px;
@@ -92,4 +94,55 @@
 
 .modals__column__line {
   margin-bottom: 23px;
+  text-align: center;
+}
+
+.modals__btn__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+.btn.modals__btn {
+  max-width: 353px;
+  height: 41px;
+  margin: 0 7.5px;
+}
+
+.modals__form {
+  width: 100%;
+}
+
+.modals__problem {
+  text-align: center;
+  color: #f3967c;
+  margin-bottom: 13px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: $mobile) {
+  .modals {
+    max-width: 350px;
+  }
+
+  .modals__line {
+    font-size: 14px;
+  }
+
+  .modals__body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .modals__column {
+    width: 48%;
+  }
 }
