@@ -1,0 +1,37 @@
+@import "config";
+
+.gap {
+}
+
+.gap__asses {
+  margin: 31px 0;
+}
+
+.gap__asses__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gap__asses__item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--good {
+    color: #4b7c61;
+  }
+
+  &--bad {
+    color: #f3967c;
+  }
+}
+
+.gap__btn__wrapper {
+  margin-top: 64px;
+}

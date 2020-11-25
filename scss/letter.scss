@@ -1,0 +1,23 @@
+@import "config";
+
+.letter__progress {
+  margin-top: 40px;
+  margin-bottom: 29px;
+}
+
+.letter__stroke {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  .cabinet__item {
+    margin-bottom: 0;
+    width: 82%;
+  }
+}
+
+.letter__btn__wrapper {
+  margin-top: 39px;
+}

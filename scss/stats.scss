@@ -73,6 +73,60 @@
   }
 }
 
+.stats__subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 28px;
+}
+
+.stats__equation__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.stats__equation__item {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 12px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.stats__equation__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 7px;
+
+  &:nth-child(3) {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #5a5a5a;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    .stats__equation__item {
+      margin-left: 3px;
+    }
+  }
+}
+
+.stats__equation__sup {
+  display: inline-block;
+  width: 100%;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  margin-right: 5px;
+}
+
 @media (max-width: $mobile) {
   .stats__btn {
     top: 5px;

@@ -14,6 +14,9 @@
 @import "decide";
 @import "progress";
 @import "stats";
+@import "letter";
+@import "textfield";
+@import "gap";
 
 body {
   min-width: 320px;
@@ -172,6 +175,18 @@ select {
 
 .blue__text {
   color: #0e80a4;
+}
+
+.green__text {
+  color: #5ba47c;
+}
+
+.red__text {
+  color: #ff0303;
+}
+
+.orange__text {
+  color: #ffa46e;
 }
 
 .logo {
@@ -441,6 +456,18 @@ select {
   path {
     transition: all 0.2s linear;
   }
+}
+
+.cabinet__link {
+  color: #0e80a4;
+  display: inline-block;
+  text-decoration: underline;
+  // border-bottom: 1px solid #0e80a4;
+  // transition: all 0.2s linear;
+
+  // &:hover {
+  //   border-color: transparent;
+  // }
 }
 
 @media (max-width: $tablet) {

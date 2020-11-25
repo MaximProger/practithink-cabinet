@@ -1,0 +1,83 @@
+@import "config";
+
+.textfield {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+}
+
+.textfield__head {
+  background: #ecf7f9;
+  border-radius: 7px 7px 0px 0px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 21px;
+}
+
+.textfield__head__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.textfield__btn {
+  margin-right: 27px;
+  background: none;
+  border: none;
+  transition: all 0.2s linear;
+
+  path {
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.active {
+    path {
+      fill: #68c2d0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.cabinet__input.textfield__textarea {
+  border-radius: 0px 0px 7px 7px;
+  border: none;
+  resize: none;
+  height: 120px;
+
+  &:focus {
+    border: none;
+  }
+}
+
+@media (max-width: $mobile) {
+  .textfield__head {
+    padding: 0 5px;
+  }
+
+  .textfield__head__wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .textfield__btn {
+    margin-right: 0;
+  }
+
+  .letter__stroke {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .cabinet__item {
+      margin-bottom: 15px;
+    }
+  }
+}

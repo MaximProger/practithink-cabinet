@@ -173,7 +173,13 @@
                       <img src="./images/dest/icons/back.svg" alt="Back" class="back__img">
                       Back to all students
                     </a>
-                    <h1 class="cabinet__title">Review</h1>
+                    <h1 class="cabinet__title">
+                      New practice:
+                      <span class="blue__text">Practice name,</span>
+                      <a href="#" class="cabinet__link">
+                        question 4
+                      </a>
+                    </h1>
                   </div>
                 </div>
 
@@ -183,211 +189,228 @@
 
 
                 <!-- Content -->
-                <div class="final">
-                  <div class="final__wrapper">
-                    <!-- Tables -->
-                    <div class="tables">
-                      <div class="tables__wrapper">
-                        <div class="tables__head">
-                          <div class="tables__head__number">1</div>
-                          <div class="tables__head__body">
-                            <div class="tables__head__subject">
-                              Math
-                            </div>
-                            <div class="tables__head__marks">
-                              <div class="tables__marks__item">
-                                Integers
-                              </div>
+                <div class="letter">
+                  <form action="/" name="letterForm" id="letterForm" class="letter__form">
+                    <div class="letter__wrapper">
+                      <!-- Progress -->
+                      <div class="progress__wrapper letter__progress">
+                        <a href="#" class="rogress__item"></a>
+                        <a href="#" class="rogress__item"></a>
+                        <a href="#" class="rogress__item active"></a>
+                        <a href="#" class="rogress__item"></a>
+                        <a href="#" class="rogress__item"></a>
+                        <a href="#" class="rogress__item"></a>
+                      </div>
 
-                              <div class="tables__marks__item">
-                                fraction
-                              </div>
-                            </div>
-                            <button class="tables__head__btn" type="button">
-                              <img src="./images/dest/icons/edit--tables.svg" alt="Edit" class="tables__edit">
-                              <span>Edit</span>
-                            </button>
-                          </div>
+                      <div class="textfiel__item cabinet__item">
+                        <div class="cabinet__intro__title">
+                          Question
                         </div>
 
-                        <div class="tables__body">
-                          <div class="tables__line tables__line--special">
-                            <div class="row">
+                        <div class="textfield">
+                          <div class="textfield__wrapper">
 
-                              <div class="tables__item col-md-3 col-6">
-                                <div class="tables__item__wrapper">
-                                  Title:
-                                </div>
-                              </div>
-
-                              <div class="tables__item col-md-9 col-6">
-                                <div class="tables__item__wrapper">
-                                  Super set for addition and substraction
-                                </div>
-                              </div>
-
-
-                            </div>
-                          </div>
-
-                          <div class="tables__line">
-                            <div class="row">
-
-                              <div class="tasbles__section col-12 col-md-6">
-                                <div class="row">
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Problem type
-                                    </div>
+                            <div class="textfield__head">
+                              <div class="textfield__head__wrapper">
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="23" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.284 12.533L1 6.636m0 0L7.284.74m8.709 0l6.283 5.896m0 0l-6.283 5.897"
+                                        stroke="#2F2F2F" stroke-miterlimit="10" stroke-linecap="square" /></svg>
                                   </div>
+                                </button>
 
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Number story
-                                    </div>
+                                <button type="button" class="textfield__btn active">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="11" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M.15 13V.31h5.815c1.356 0 2.4.294 3.132.882.744.588 1.116 1.392 1.116 2.412 0 .672-.168 1.254-.504 1.746-.336.48-.804.84-1.404 1.08.72.204 1.272.564 1.656 1.08.396.516.594 1.152.594 1.908 0 1.128-.396 2.01-1.188 2.646-.78.624-1.848.936-3.204.936H.15zm2.665-7.47h2.664c1.368 0 2.052-.528 2.052-1.584 0-1.044-.684-1.566-2.052-1.566H2.815v3.15zm0 5.4h2.97c.72 0 1.248-.138 1.584-.414.336-.276.504-.696.504-1.26 0-.552-.168-.966-.504-1.242-.336-.276-.864-.414-1.584-.414h-2.97v3.33z"
+                                        fill="#2F2F2F" /></svg>
                                   </div>
-                                </div>
-                              </div>
+                                </button>
 
-                              <div class="tasbles__section col-12 col-md-6">
-                                <div class="row">
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Total problems
-                                    </div>
+                                <button type="button" class="textfield__btn">
+                                  <svg width="3" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M.578 13V.31h2.304V13H.578z" fill="#2F2F2F" /></svg>
+                                </button>
+
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M3.984 8.311c-.657 0-1.188.53-1.188 1.188 0 .656.53 1.187 1.188 1.187.657 0 1.187-.53 1.187-1.188 0-.656-.53-1.187-1.187-1.187zm0-4.75a1.188 1.188 0 10-.001 2.373 1.188 1.188 0 00.001-2.372zm0 9.63a1.057 1.057 0 100 2.113 1.057 1.057 0 000-2.113zm2.374 1.848H17.44v-1.583H6.358v1.583zm0-4.749H17.44V8.707H6.358v1.583zm0-6.332V5.54H17.44V3.958H6.358z"
+                                        fill="#2F2F2F" /></svg>
                                   </div>
+                                </button>
 
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      16
-                                    </div>
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g clip-path="url(#clip0)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M4.343 3.265h.742v2.597h.52v.668H3.824v-.668h.52v-1.78l-.298.296-.37-.37.667-.743zm3.191.594h8.905v1.78H7.534V3.86zm8.905 4.749H7.534v1.78h8.905v-1.78zm-.074 4.823H7.46v1.781h8.905v-1.78zm-12.86-.554a2.304 2.304 0 011.102-.262c.296 0 .594.065.83.217a.9.9 0 01.434.77.866.866 0 01-.247.62.91.91 0 01.278.657c0 .38-.247.639-.484.782a1.61 1.61 0 01-.811.22c-.426 0-.859-.154-1.228-.372l.36-.593c.26.153.567.222.868.222.158 0 .347-.04.466-.111.079-.048.1-.1.106-.128a.234.234 0 00.002-.095.29.29 0 00-.108-.148.419.419 0 00-.206-.074 1.497 1.497 0 00-.348-.017 5.25 5.25 0 01-.403.017h-.005v-.705h.005c.067 0 .133-.004.209-.008l.15-.008c.125-.01.25-.026.359-.045a.637.637 0 00.253-.096.166.166 0 00.05-.052.131.131 0 00.013-.066c0-.044-.014-.09-.094-.14a.855.855 0 00-.449-.105c-.308 0-.541.061-.779.184l-.322-.664zm1.119-4.269a.933.933 0 00-.437.113c-.125.062-.22.117-.305.192l-.446-.572c.152-.134.31-.22.452-.291a1.6 1.6 0 01.736-.184c.307 0 .608.077.844.237a.94.94 0 01.434.784c0 .612-.434 1.001-.945 1.059a6.652 6.652 0 00-.365.05 1.628 1.628 0 00-.264.06c-.154.063-.2.12-.216.145-.016.026-.033.072-.033.188h1.823v.742H3.379v-.742c0-.18.024-.394.146-.594.123-.2.314-.335.552-.431.112-.046.272-.078.404-.1.142-.025.292-.044.402-.056.222-.025.318-.156.318-.321 0-.036-.015-.094-.11-.159a.849.849 0 00-.467-.12z"
+                                          fill="#2F2F2F" />
+                                      </g>
+                                      <defs>
+                                        <clipPath id="clip0">
+                                          <path fill="#fff" transform="translate(.41)" d="M0 0h18.997v18.997H0z" />
+                                        </clipPath>
+                                      </defs>
+                                    </svg>
                                   </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                                </button>
 
-                          <div class="tables__line">
-                            <div class="row">
-
-                              <div class="tasbles__section col-12 col-md-6">
-                                <div class="row">
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Answer type
-                                    </div>
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M5.556 14.582A3.543 3.543 0 013.05 8.534l2.4-2.4a3.549 3.549 0 015.013 0 3.55 3.55 0 010 5.012l-2.4 2.4a3.533 3.533 0 01-2.507 1.036zm2.4-8.374a2.422 2.422 0 00-1.72.711l-2.4 2.401a2.432 2.432 0 103.44 3.438l2.4-2.4a2.43 2.43 0 00-1.72-4.15z"
+                                        fill="#2F2F2F" />
+                                      <path
+                                        d="M10.982 13.384c-.302 0-.603-.039-.895-.116a.556.556 0 01.282-1.075 2.432 2.432 0 002.332-.634l2.4-2.4a2.432 2.432 0 00-3.438-3.44l-2.4 2.401a2.443 2.443 0 00-.634 2.334.557.557 0 01-1.076.28 3.559 3.559 0 01.924-3.4l2.4-2.401a3.545 3.545 0 115.012 5.01l-2.4 2.4a3.522 3.522 0 01-2.507 1.04z"
+                                        fill="#2F2F2F" /></svg>
                                   </div>
-
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      True or False
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="tasbles__section col-12 col-md-6">
-                                <div class="row">
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Page layout
-                                    </div>
-                                  </div>
-
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      1 Problem per page
-                                    </div>
-                                  </div>
-                                </div>
+                                </button>
                               </div>
                             </div>
+
+                            <textarea name="question" id="question"
+                              class="form-control cabinet__input textfield__textarea"
+                              placeholder="Describe yourself..."></textarea>
                           </div>
-
-                          <div class="tables__line">
-                            <div class="row">
-
-                              <div class="tasbles__section col-12 col-md-6">
-                                <div class="row">
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Page type
-                                    </div>
-                                  </div>
-
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      1 Problem per page
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="tasbles__section col-12 col-md-6">
-                                <div class="row">
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      Time
-                                    </div>
-                                  </div>
-
-                                  <div class="tables__item col-6">
-                                    <div class="tables__item__wrapper">
-                                      10 min
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
                         </div>
                       </div>
-                    </div>
 
-                    <div class="final__fields">
-                      <form action="/" name="finalForm" id="finalForm" class="final__form">
-                        <div class="cabinet__item">
-                          <div class="cabinet__checkbox__item">
-                            <input type="checkbox" class="cabinet__checkbox" id="publish" name="publish">
-                            <label class="cabinet__label" for="publish">Publish to PractiThink marketplace</label>
+                      <div class="letter__line">
+                        <div class="cabinet__intro__title">
+                          Answer
+                        </div>
+                        <div class="row">
+                          <div class="cabinet__item col-12 col-md-3">
+                            <div class="cabinet__intro__title">
+                              <span class="green__text">True</span>
+                            </div>
+                            <input type="number" class="form-control cabinet__input" name="letter-1" id="letter-1"
+                              placeholder="34" required>
+                          </div>
+
+                          <div class="cabinet__item col-12 col-md-6">
+                            <div class="cabinet__intro__title">
+                              <span class="red__text">False</span> (Comma separated. Maximum 5)
+                            </div>
+                            <input type="number" class="form-control cabinet__input" name="letter-2" id="letter-2"
+                              placeholder="e.g. 23, 34, 58" required>
+                          </div>
+
+                          <div class="cabinet__item col-12 col-md-3">
+                            <div class="cabinet__intro__title">
+                              <span class="orange__text">Almost</span> (optional)
+                            </div>
+                            <input type="number" class="form-control cabinet__input" name="letter-3" id="letter-3"
+                              placeholder="34" required>
                           </div>
                         </div>
+                      </div>
 
+                      <div class="letter__stroke">
                         <div class="cabinet__item">
                           <div class="cabinet__intro__title">
-                            Marketplace
+                            <span class="blue__text">Hint</span> (optional)
                           </div>
-                          <div class="final__fields__wrapper">
-                            <div class="cabinet__checkbox__item">
-                              <input type="radio" class="cabinet__checkbox" id="premium" name="marketplace" checked>
-                              <label class="cabinet__label" for="premium">Premium</label>
-                            </div>
-                            <div class="cabinet__checkbox__item">
-                              <input type="radio" class="cabinet__checkbox" id="free" name="marketplace">
-                              <label class="cabinet__label" for="free">Free</label>
-                            </div>
-                          </div>
+                          <input type="number" class="form-control cabinet__input" name="letter-2" id="letter-2"
+                            placeholder="e.g. 23, 34, 58" required>
                         </div>
 
-                        <div class="cabinet__item">
-                          <div class="cabinet__intro__title">
-                            Price
-                          </div>
-                          <input type="number" class="form-control cabinet__input final__input" name="price" id="price"
-                            placeholder="$10" required>
+                        <button type="button" class="btn btn--opacity cabinet__btn">Upload</button>
+                      </div>
+
+                      <div class="textfiel__item cabinet__item">
+                        <div class="cabinet__intro__title">
+                          Solution
                         </div>
 
-                        <div class="cabinet__btn__wrapper final__btn__wrapper final__btn__wrapper--2">
-                          <button type="button" class="btn btn--opacity cabinet__btn ">
-                            Edit
-                          </button>
-                          <button type="submit" name="finalSubmit" class="btn cabinet__btn">Save</button>
+                        <div class="textfield">
+                          <div class="textfield__wrapper">
+
+                            <div class="textfield__head">
+                              <div class="textfield__head__wrapper">
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="23" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.284 12.533L1 6.636m0 0L7.284.74m8.709 0l6.283 5.896m0 0l-6.283 5.897"
+                                        stroke="#2F2F2F" stroke-miterlimit="10" stroke-linecap="square" /></svg>
+                                  </div>
+                                </button>
+
+                                <button type="button" class="textfield__btn active">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="11" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M.15 13V.31h5.815c1.356 0 2.4.294 3.132.882.744.588 1.116 1.392 1.116 2.412 0 .672-.168 1.254-.504 1.746-.336.48-.804.84-1.404 1.08.72.204 1.272.564 1.656 1.08.396.516.594 1.152.594 1.908 0 1.128-.396 2.01-1.188 2.646-.78.624-1.848.936-3.204.936H.15zm2.665-7.47h2.664c1.368 0 2.052-.528 2.052-1.584 0-1.044-.684-1.566-2.052-1.566H2.815v3.15zm0 5.4h2.97c.72 0 1.248-.138 1.584-.414.336-.276.504-.696.504-1.26 0-.552-.168-.966-.504-1.242-.336-.276-.864-.414-1.584-.414h-2.97v3.33z"
+                                        fill="#2F2F2F" /></svg>
+                                  </div>
+                                </button>
+
+                                <button type="button" class="textfield__btn">
+                                  <svg width="3" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M.578 13V.31h2.304V13H.578z" fill="#2F2F2F" /></svg>
+                                </button>
+
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M3.984 8.311c-.657 0-1.188.53-1.188 1.188 0 .656.53 1.187 1.188 1.187.657 0 1.187-.53 1.187-1.188 0-.656-.53-1.187-1.187-1.187zm0-4.75a1.188 1.188 0 10-.001 2.373 1.188 1.188 0 00.001-2.372zm0 9.63a1.057 1.057 0 100 2.113 1.057 1.057 0 000-2.113zm2.374 1.848H17.44v-1.583H6.358v1.583zm0-4.749H17.44V8.707H6.358v1.583zm0-6.332V5.54H17.44V3.958H6.358z"
+                                        fill="#2F2F2F" /></svg>
+                                  </div>
+                                </button>
+
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g clip-path="url(#clip0)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M4.343 3.265h.742v2.597h.52v.668H3.824v-.668h.52v-1.78l-.298.296-.37-.37.667-.743zm3.191.594h8.905v1.78H7.534V3.86zm8.905 4.749H7.534v1.78h8.905v-1.78zm-.074 4.823H7.46v1.781h8.905v-1.78zm-12.86-.554a2.304 2.304 0 011.102-.262c.296 0 .594.065.83.217a.9.9 0 01.434.77.866.866 0 01-.247.62.91.91 0 01.278.657c0 .38-.247.639-.484.782a1.61 1.61 0 01-.811.22c-.426 0-.859-.154-1.228-.372l.36-.593c.26.153.567.222.868.222.158 0 .347-.04.466-.111.079-.048.1-.1.106-.128a.234.234 0 00.002-.095.29.29 0 00-.108-.148.419.419 0 00-.206-.074 1.497 1.497 0 00-.348-.017 5.25 5.25 0 01-.403.017h-.005v-.705h.005c.067 0 .133-.004.209-.008l.15-.008c.125-.01.25-.026.359-.045a.637.637 0 00.253-.096.166.166 0 00.05-.052.131.131 0 00.013-.066c0-.044-.014-.09-.094-.14a.855.855 0 00-.449-.105c-.308 0-.541.061-.779.184l-.322-.664zm1.119-4.269a.933.933 0 00-.437.113c-.125.062-.22.117-.305.192l-.446-.572c.152-.134.31-.22.452-.291a1.6 1.6 0 01.736-.184c.307 0 .608.077.844.237a.94.94 0 01.434.784c0 .612-.434 1.001-.945 1.059a6.652 6.652 0 00-.365.05 1.628 1.628 0 00-.264.06c-.154.063-.2.12-.216.145-.016.026-.033.072-.033.188h1.823v.742H3.379v-.742c0-.18.024-.394.146-.594.123-.2.314-.335.552-.431.112-.046.272-.078.404-.1.142-.025.292-.044.402-.056.222-.025.318-.156.318-.321 0-.036-.015-.094-.11-.159a.849.849 0 00-.467-.12z"
+                                          fill="#2F2F2F" />
+                                      </g>
+                                      <defs>
+                                        <clipPath id="clip0">
+                                          <path fill="#fff" transform="translate(.41)" d="M0 0h18.997v18.997H0z" />
+                                        </clipPath>
+                                      </defs>
+                                    </svg>
+                                  </div>
+                                </button>
+
+                                <button type="button" class="textfield__btn">
+                                  <div class="textfield__btn__wrapper">
+                                    <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M5.556 14.582A3.543 3.543 0 013.05 8.534l2.4-2.4a3.549 3.549 0 015.013 0 3.55 3.55 0 010 5.012l-2.4 2.4a3.533 3.533 0 01-2.507 1.036zm2.4-8.374a2.422 2.422 0 00-1.72.711l-2.4 2.401a2.432 2.432 0 103.44 3.438l2.4-2.4a2.43 2.43 0 00-1.72-4.15z"
+                                        fill="#2F2F2F" />
+                                      <path
+                                        d="M10.982 13.384c-.302 0-.603-.039-.895-.116a.556.556 0 01.282-1.075 2.432 2.432 0 002.332-.634l2.4-2.4a2.432 2.432 0 00-3.438-3.44l-2.4 2.401a2.443 2.443 0 00-.634 2.334.557.557 0 01-1.076.28 3.559 3.559 0 01.924-3.4l2.4-2.401a3.545 3.545 0 115.012 5.01l-2.4 2.4a3.522 3.522 0 01-2.507 1.04z"
+                                        fill="#2F2F2F" /></svg>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                            <textarea name="solution" id="solution"
+                              class="form-control cabinet__input textfield__textarea"
+                              placeholder="Describe yourself..."></textarea>
+                          </div>
                         </div>
-                      </form>
+                      </div>
+
+
+                      <div class="cabinet__btn__wrapper letter__btn__wrapper">
+                        <button type="button" class="btn btn--opacity cabinet__btn">Cancel</button>
+                        <button type="submit" name="letterContinue" class="btn cabinet__btn">Continue</button>
+                      </div>
+
                     </div>
-                  </div>
+                  </form>
                 </div>
 
                 <div class="mask"></div>
