@@ -1,0 +1,21 @@
+@import "config";
+
+.favorite {
+  position: relative;
+}
+
+.favorite__count {
+  position: absolute;
+  top: 0;
+  right: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 0 5px;
+  max-width: 35px;
+  height: 18.32px;
+  background: #f3967c;
+  border-radius: 50%;
+  color: #ffffff;
+}
