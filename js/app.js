@@ -22,8 +22,7 @@ $(document).ready(function () {
   });
 
   $(".select__checkbox__item").click(function () {
-    $(".select__checkbox__item").removeClass("active");
-    $(this).addClass("active");
+    $(this).toggleClass("active");
     $(this).parents(".select").find(".select__title").addClass("active");
     $(this)
       .parents(".select")

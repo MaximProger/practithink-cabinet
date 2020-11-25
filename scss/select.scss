@@ -147,7 +147,6 @@
   cursor: pointer;
 
   &.active {
-    pointer-events: none;
     .select__label::before {
       border-color: #68c2d0;
       background-color: #68c2d0;

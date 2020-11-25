@@ -128,7 +128,7 @@ select {
   padding-top: 23px;
   // min-height: 100vh;
   height: 100%;
-  transition: all 0.2s linear;
+  // transition: all 0.2s linear;
   box-shadow: 10px 0 8px 4px rgba(0, 0, 0, 0.05);
   position: fixed;
   top: 0;
@@ -150,25 +150,28 @@ select {
       display: none;
     }
 
-    .nav__subitem {
-      padding-left: 7px;
-    }
+    // .nav__subitem {
+    //   padding-left: 7px;
+    // }
 
     .nav__item {
       &::before {
-        width: 130%;
+        width: 126%;
       }
     }
 
     .nav__subitem__text {
-      display: none;
+      font-size: 0;
+      color: transparent;
+      margin: 0;
+      padding: 0;
     }
 
-    .nav__subicon {
-      margin-right: 0;
-      width: 10px;
-      height: 10px;
-    }
+    // .nav__subicon {
+    //   margin-right: 0;
+    //   width: 10px;
+    //   height: 10px;
+    // }
   }
 }
 
