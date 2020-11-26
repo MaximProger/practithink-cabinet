@@ -482,6 +482,34 @@ select {
     &.active {
       display: block;
     }
+
+    &--hide {
+      width: 260px;
+
+      .logo__img {
+        display: none !important;
+
+        &:first-child {
+          display: block !important;
+        }
+      }
+
+      .nav__item__text {
+        display: block;
+      }
+
+      .nav__item {
+        &::before {
+          width: 105%;
+        }
+      }
+
+      .nav__subitem__text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #2f2f2f;
+      }
+    }
   }
 
   .btn.sibar__btn {
