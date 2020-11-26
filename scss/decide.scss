@@ -102,6 +102,7 @@
   font-size: 18px;
   line-height: 25px;
   color: #0e80a4;
+  vertical-align: middle;
 
   &--empty {
     background: #ffffff;
@@ -230,5 +231,10 @@
     &--result {
       margin-top: 70px;
     }
+  }
+
+  .decide__inner {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

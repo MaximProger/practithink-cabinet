@@ -59,6 +59,7 @@
 @media (max-width: $mobile) {
   .choose__wrapper {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .choose__item {

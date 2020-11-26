@@ -52,7 +52,14 @@
 
     .nav__icon {
       path {
-        stroke: #fff;
+        fill: #fff;
+      }
+
+      &--stroke {
+        path {
+          fill: none;
+          stroke: #fff;
+        }
       }
     }
 

@@ -38,7 +38,8 @@
                 <div class="nav__inner">
                   <div class="nav__item__wrapper">
                     <a href="#" class="nav__item">
-                      <svg class="nav__icon" width="27" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="nav__icon nav__icon--stroke" width="27" height="22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.54 21.467V9.223H1L13.342 1l12.366 8.223h-2.616v12.244l-5.655-.09V16.73a4.132 4.132 0 00-4.12-4.136v0a4.136 4.136 0 00-4.135 4.136v4.648l-5.643.089z"
                           stroke="#68C2D0" stroke-linecap="round" stroke-linejoin="round" /></svg>
@@ -48,7 +49,8 @@
 
                   <div class="nav__item__wrapper">
                     <a href="#" class="nav__item">
-                      <svg class="nav__icon" width="25" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="nav__icon nav__icon--stroke" width="25" height="18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M12.22.557l.022-.011.02-.014a.236.236 0 01.055-.029.05.05 0 01.016-.003.05.05 0 01.016.003c.01.004.029.012.055.029l.02.014.022.011L24.02 6.73c.104.075.146.158.146.268 0 .11-.042.193-.146.268l-11.574 6.172-.035.019h-.124a.235.235 0 01-.026-.003h-.002l-.006-.002a.349.349 0 01-.039-.017L.647 7.265C.543 7.192.5 7.108.5 6.999c0-.11.043-.193.147-.268L12.22.557z"
                           stroke="#68C2D0" />
@@ -215,16 +217,23 @@
                             </div>
                           </div>
 
-                          <div class="decide__btn__wrapper">
-                            <button type="button" class="btn btn--opacity cabinet__btn">Skip this question</button>
+                          <div class="decide__btn__wrapper btn__wrapper__mobile">
+                            <button type="button" class="btn btn--opacity cabinet__btn skip__btn">Skip this
+                              question</button>
+
                             <button type="button"
-                              class="btn cabinet__btn  cabinet__btn__edit cabinet__btn__edit--reverse">
+                              class="btn btn--opacity cabinet__btn  cabinet__btn__edit hint__btn hint__btn--mobile">
+                              <img src="./images/dest/icons/hint--mobile.svg" alt="Hint" class="hint__btn__icon">
+                            </button>
+
+                            <button type="button"
+                              class="btn cabinet__btn  cabinet__btn__edit redo__btn cabinet__btn__edit--reverse">
                               <span class="cabinet__btn__text">Redo</span>
                               <img class="cabinet__btn__icon" src="./images/dest/icons/refresh.svg" alt="refresh">
-
                             </button>
+
                             <button type="button"
-                              class="btn btn--opacity cabinet__btn  cabinet__btn__edit decide__hint">
+                              class="btn btn--opacity cabinet__btn  cabinet__btn__edit decide__hint hint__btn">
                               <svg class="cabinet__btn__icon" width="13" height="13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -235,6 +244,9 @@
                                   fill="#68C2D0" /></svg>
                               <span class="cabinet__btn__text">Hint</span>
                             </button>
+
+                            <button type="button"
+                              class="btn btn--opacity cabinet__btn skip__btn skip__btn--mobile">Skip</button>
                           </div>
                         </div>
 

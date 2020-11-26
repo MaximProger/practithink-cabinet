@@ -125,6 +125,18 @@ select {
   }
 }
 
+.btn.hint__btn {
+  &--mobile {
+    display: none !important;
+  }
+}
+
+.btn.skip__btn {
+  &--mobile {
+    display: none !important;
+  }
+}
+
 .sidebar {
   width: 260px;
   max-width: 260px;
@@ -551,5 +563,38 @@ select {
 
   .back {
     margin-bottom: 10px;
+  }
+
+  .btn.hint__btn {
+    display: none !important;
+    &--mobile {
+      display: flex !important;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  .btn.skip__btn {
+    display: none !important;
+    &--mobile {
+      display: flex !important;
+      width: 68px;
+    }
+  }
+
+  .btn.redo__btn {
+    width: 169px;
+  }
+
+  .btn__wrapper__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .btn {
+      margin: 0 !important;
+    }
   }
 }

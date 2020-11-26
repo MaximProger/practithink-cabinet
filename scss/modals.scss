@@ -162,6 +162,26 @@
 @media (max-width: $mobile) {
   .modals {
     max-width: 350px;
+
+    &--hint {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+      // bottom: 0;
+      max-width: 100%;
+
+      .modals__head {
+        align-items: center;
+      }
+
+      .modals__close {
+        right: 15px;
+        top: 57%;
+      }
+    }
   }
 
   .modals__line {
