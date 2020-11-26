@@ -167,12 +167,16 @@
                     <div class="gap__wrapper">
 
                       <!-- Decide -->
-                      <div class="decide decide--big">
+                      <div class="decide decide--progress decide--task decide--big">
                         <div class="decide__inner">
-                          <h3 class="decide__title">
-                            Question goes here. 2+2=?
-                          </h3>
-
+                          <div class="progress__wrapper progress__wrapper--result">
+                            <a href="#" class="rogress__item active"></a>
+                            <a href="#" class="rogress__item"></a>
+                            <a href="#" class="rogress__item"></a>
+                            <a href="#" class="rogress__item"></a>
+                            <a href="#" class="rogress__item"></a>
+                            <a href="#" class="rogress__item"></a>
+                          </div>
                           <div class="decide__wrapper">
                             <div class="decide__box">
                               <div class="decide__item">
@@ -189,10 +193,12 @@
                                 </div>
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-1"
-                                    id="decide-1" value="2" required>
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-2"
-                                    id="decide-2" value="6" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-1" id="decide-1" value="2" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-2" id="decide-2" value="6" required>
                                 </div>
                               </div>
 
@@ -210,31 +216,12 @@
                                 </div>
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-3"
-                                    id="decide-3" value="2" required>
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-4"
-                                    id="decide-4" value="7" required>
-                                </div>
-                              </div>
-
-                              <div class="decide__item">
-                                <div class="decide__col">
-                                  <span class="decide__number">1</span>
-                                  <span class="decide__line"></span>
-                                  <span class="decide__number">3</span>
-                                </div>
-                                <span class="decide__mark">+</span>
-                                <div class="decide__col">
-                                  <span class="decide__number">1</span>
-                                  <span class="decide__line"></span>
-                                  <span class="decide__number">3</span>
-                                </div>
-                                <span class="decide__mark">=</span>
-                                <div class="decide__col decide__col--inputs">
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-5"
-                                    id="decide-5" value="2" required>
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-6"
-                                    id="decide-6" value="6" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-3" id="decide-3" value="2" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-4" id="decide-4" value="7" required>
                                 </div>
                               </div>
 
@@ -253,11 +240,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-7" id="decide-7" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-5" id="decide-5" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-8" id="decide-8" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-6" id="decide-6" value="6" required>
                                 </div>
                               </div>
 
@@ -276,11 +263,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-9" id="decide-9" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-7" id="decide-7" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-10" id="decide-10" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-8" id="decide-8" value="6" required>
                                 </div>
                               </div>
 
@@ -299,11 +286,34 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-11" id="decide-11" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-9" id="decide-9" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-12" id="decide-12" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-10" id="decide-10" value="6" required>
+                                </div>
+                              </div>
+
+                              <div class="decide__item">
+                                <div class="decide__col">
+                                  <span class="decide__number">1</span>
+                                  <span class="decide__line"></span>
+                                  <span class="decide__number">3</span>
+                                </div>
+                                <span class="decide__mark">+</span>
+                                <div class="decide__col">
+                                  <span class="decide__number">1</span>
+                                  <span class="decide__line"></span>
+                                  <span class="decide__number">3</span>
+                                </div>
+                                <span class="decide__mark">=</span>
+                                <div class="decide__col decide__col--inputs">
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-11" id="decide-11" value="2" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-12" id="decide-12" value="6" required>
                                 </div>
                               </div>
                             </div>
@@ -324,11 +334,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-13" id="decide-13" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-13" id="decide-13" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-14" id="decide-14" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-14" id="decide-14" value="6" required>
                                 </div>
                               </div>
 
@@ -347,11 +357,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-15" id="decide-15" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-15" id="decide-15" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-16" id="decide-16" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-16" id="decide-16" value="6" required>
                                 </div>
                               </div>
 
@@ -370,11 +380,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-17" id="decide-17" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-17" id="decide-17" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-18" id="decide-18" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-18" id="decide-18" value="6" required>
                                 </div>
                               </div>
 
@@ -394,11 +404,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-19" id="decide-19" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-19" id="decide-19" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-20" id="decide-20" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-20" id="decide-20" value="6" required>
                                 </div>
                               </div>
 
@@ -417,11 +427,11 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-21" id="decide-21" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-21" id="decide-21" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-22" id="decide-22" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-22" id="decide-22" value="6" required>
                                 </div>
                               </div>
 
@@ -440,19 +450,46 @@
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-23" id="decide-23" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-23" id="decide-23" value="2" required>
                                   <input type="number"
-                                    class="form-control cabinet__input decide__input decide__input--empty"
-                                    name="decide-24" id="decide-24" required>
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-24" id="decide-24" value="6" required>
                                 </div>
                               </div>
                             </div>
                           </div>
 
-                          <div class="decide__btn__wrapper">
-                            <button type="submit" name="examplesSubmit" class="btn cabinet__btn">Submit</button>
-                            <button type="button" class="btn btn--opacity cabinet__btn">Cancel</button>
+                          <div class="result">
+                            <div class="result__wrappr">
+                              <div class="result__item result__item--score">
+                                <div class="result__score__icon result__score__icon--9">
+
+                                </div>
+                                <span class="result__text">
+                                  Score:
+                                  <span class="result__value">
+                                    <span class="result__value__number">9</span>
+                                    /
+                                    <span class="result__value__number">12</span>
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="result__item result__item--smile">
+                                <div class="result__smile__icon"></div>
+                                <span class="result__text">Good job!</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="decide__btn__wrapper decide__btn__wrapper--result">
+                            <button type="button" class="btn btn--opacity cabinet__btn">Take a break</button>
+                            <button type="button"
+                              class="btn cabinet__btn  cabinet__btn__edit cabinet__btn__edit--reverse">
+                              <span class="cabinet__btn__text">Redo</span>
+                              <img class="cabinet__btn__icon" src="./images/dest/icons/refresh.svg" alt="refresh">
+
+                            </button>
                             <button type="button"
                               class="btn btn--opacity cabinet__btn  cabinet__btn__edit decide__hint">
                               <svg class="cabinet__btn__icon" width="13" height="13" fill="none"
@@ -468,6 +505,124 @@
                           </div>
                         </div>
 
+                      </div>
+
+                      <div class="history">
+                        <div class="history__inner">
+                          <h2 class="history__title">
+                            History
+                          </h2>
+
+                          <div class="history__wrapper">
+                            <div class="history__item history__item--green">
+                              <div class="history__left"></div>
+                              <div class="history__content">
+                                <div class="history__content__wrapper">
+                                  <h3 class="history__item__title">
+                                    Question: 1
+                                  </h3>
+                                  <div class="history__item__row">
+
+                                    <div class="history__content__left">
+                                      Answer:
+                                      <div class="decide__col">
+                                        <span class="decide__number">1</span>
+                                        <span class="decide__line"></span>
+                                        <span class="decide__number">3</span>
+                                      </div>
+                                    </div>
+
+                                    <div class="history__content__right">
+                                      <div class="history__star">
+                                        <svg class="history__star__icon active" width="17" height="16" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M8.038.551a1 1 0 011.743 0l1.91 3.4a1 1 0 00.674.49l3.819.772a1 1 0 01.538 1.656l-2.639 2.88a1 1 0 00-.256.79l.447 3.883a1 1 0 01-1.41 1.023l-3.537-1.623a1 1 0 00-.835 0l-3.537 1.623a1 1 0 01-1.41-1.023l.447-3.883a1 1 0 00-.256-.79l-2.64-2.88a1 1 0 01.54-1.656l3.818-.772a1 1 0 00.673-.49l1.91-3.4z"
+                                            fill="#C9C9C8" /></svg>
+                                        Correct
+                                      </div>
+                                      <span class="history__count">
+                                        <span class="blue__text">0</span> of 3
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="history__item history__item--green">
+                              <div class="history__left"></div>
+                              <div class="history__content">
+                                <div class="history__content__wrapper">
+                                  <h3 class="history__item__title">
+                                    Question: 2
+                                  </h3>
+                                  <div class="history__item__row">
+
+                                    <div class="history__content__left">
+                                      Answer:
+                                      <div class="decide__col">
+                                        <span class="decide__number">1</span>
+                                        <span class="decide__line"></span>
+                                        <span class="decide__number">3</span>
+                                      </div>
+                                    </div>
+
+                                    <div class="history__content__right">
+                                      <div class="history__star">
+                                        <svg class="history__star__icon active" width="17" height="16" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M8.038.551a1 1 0 011.743 0l1.91 3.4a1 1 0 00.674.49l3.819.772a1 1 0 01.538 1.656l-2.639 2.88a1 1 0 00-.256.79l.447 3.883a1 1 0 01-1.41 1.023l-3.537-1.623a1 1 0 00-.835 0l-3.537 1.623a1 1 0 01-1.41-1.023l.447-3.883a1 1 0 00-.256-.79l-2.64-2.88a1 1 0 01.54-1.656l3.818-.772a1 1 0 00.673-.49l1.91-3.4z"
+                                            fill="#C9C9C8" /></svg>
+                                        Correct
+                                      </div>
+                                      <span class="history__count">
+                                        <span class="blue__text">0</span> of 3
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="history__item history__item--red">
+                              <div class="history__left"></div>
+                              <div class="history__content">
+                                <div class="history__content__wrapper">
+                                  <h3 class="history__item__title">
+                                    Question: 3
+                                  </h3>
+                                  <div class="history__item__row">
+
+                                    <div class="history__content__left">
+                                      Answer:
+                                      <div class="decide__col">
+                                        <span class="decide__number">1</span>
+                                        <span class="decide__line"></span>
+                                        <span class="decide__number">3</span>
+                                      </div>
+                                    </div>
+
+                                    <div class="history__content__right">
+                                      <div class="history__star">
+                                        <svg class="history__star__icon" width="17" height="16" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M8.038.551a1 1 0 011.743 0l1.91 3.4a1 1 0 00.674.49l3.819.772a1 1 0 01.538 1.656l-2.639 2.88a1 1 0 00-.256.79l.447 3.883a1 1 0 01-1.41 1.023l-3.537-1.623a1 1 0 00-.835 0l-3.537 1.623a1 1 0 01-1.41-1.023l.447-3.883a1 1 0 00-.256-.79l-2.64-2.88a1 1 0 01.54-1.656l3.818-.772a1 1 0 00.673-.49l1.91-3.4z"
+                                            fill="#C9C9C8" /></svg>
+                                        False
+                                      </div>
+                                      <span class="history__count">
+                                        2 of 3
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </form>

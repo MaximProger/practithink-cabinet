@@ -1,0 +1,136 @@
+@import "config";
+
+.history {
+  padding-top: 24px;
+}
+
+.history__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+.history__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15), inset 0 0 0 2px #2f2f2f;
+  border-radius: 7px;
+  background: #fff;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--green {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15), inset 0 0 0 2px #4b7c61;
+
+    .history__left {
+      background: #4b7c61;
+    }
+
+    .decide__col {
+      margin-left: 5px;
+      font-weight: bold;
+      color: #4b7c61;
+    }
+
+    .decide__line {
+      background: #7fb846;
+      margin: 0;
+    }
+  }
+
+  &--red {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15), inset 0 0 0 2px#F3967C;
+
+    .history__left {
+      background: #f3967c;
+    }
+
+    .decide__col {
+      margin-left: 5px;
+      font-weight: bold;
+      color: #f3967c;
+    }
+
+    .decide__line {
+      background: #f3967c;
+      margin: 0;
+    }
+  }
+}
+
+.history__left {
+  height: 100%;
+  width: 11.4px;
+  background: #2f2f2f;
+  border-radius: 7px 0 0 7px;
+}
+
+.history__content {
+  width: 100%;
+  padding: 0 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history__content__wrapper {
+  width: 100%;
+}
+
+.history__item__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.history__item__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history__content__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.history__content__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.history__count {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.history__star {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70px;
+}
+
+.history__star__icon {
+  margin-right: 3.6px;
+
+  &.active {
+    path {
+      fill: #fee87a;
+    }
+  }
+}
+
+.history__icon {
+  margin-left: 5px;
+}

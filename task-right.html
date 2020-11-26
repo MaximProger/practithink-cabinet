@@ -167,10 +167,10 @@
                     <div class="gap__wrapper">
 
                       <!-- Decide -->
-                      <div class="decide decide--big">
+                      <div class="decide decide--task decide--big">
                         <div class="decide__inner">
                           <h3 class="decide__title">
-                            Question goes here. 2+2=?
+                            Question goes here.
                           </h3>
 
                           <div class="decide__wrapper">
@@ -189,10 +189,12 @@
                                 </div>
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-1"
-                                    id="decide-1" value="2" required>
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-2"
-                                    id="decide-2" value="6" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-1" id="decide-1" value="2" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-2" id="decide-2" value="6" required>
                                 </div>
                               </div>
 
@@ -210,10 +212,12 @@
                                 </div>
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-3"
-                                    id="decide-3" value="2" required>
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-4"
-                                    id="decide-4" value="7" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-3" id="decide-3" value="2" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--right"
+                                    name="decide-4" id="decide-4" value="7" required>
                                 </div>
                               </div>
 
@@ -231,10 +235,12 @@
                                 </div>
                                 <span class="decide__mark">=</span>
                                 <div class="decide__col decide__col--inputs">
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-5"
-                                    id="decide-5" value="2" required>
-                                  <input type="number" class="form-control cabinet__input decide__input" name="decide-6"
-                                    id="decide-6" value="6" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-5" id="decide-5" value="2" required>
+                                  <input type="number"
+                                    class="form-control cabinet__input decide__input decide__input--wrong"
+                                    name="decide-6" id="decide-6" value="6" required>
                                 </div>
                               </div>
 
@@ -450,9 +456,36 @@
                             </div>
                           </div>
 
-                          <div class="decide__btn__wrapper">
-                            <button type="submit" name="examplesSubmit" class="btn cabinet__btn">Submit</button>
-                            <button type="button" class="btn btn--opacity cabinet__btn">Cancel</button>
+                          <div class="result">
+                            <div class="result__wrappr">
+                              <div class="result__item result__item--score">
+                                <div class="result__score__icon result__score__icon--9">
+
+                                </div>
+                                <span class="result__text">
+                                  Score:
+                                  <span class="result__value">
+                                    <span class="result__value__number">12</span>
+                                    /
+                                    <span class="result__value__number">12</span>
+                                  </span>
+                                </span>
+                              </div>
+                              <div class="result__item result__item--smile">
+                                <div class="result__smile__icon"></div>
+                                <span class="result__text">Good job!</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="decide__btn__wrapper decide__btn__wrapper--result">
+                            <button type="button" class="btn btn--opacity cabinet__btn">Take a break</button>
+                            <button type="button"
+                              class="btn cabinet__btn  cabinet__btn__edit cabinet__btn__edit--reverse">
+                              <span class="cabinet__btn__text">Redo</span>
+                              <img class="cabinet__btn__icon" src="./images/dest/icons/refresh.svg" alt="refresh">
+
+                            </button>
                             <button type="button"
                               class="btn btn--opacity cabinet__btn  cabinet__btn__edit decide__hint">
                               <svg class="cabinet__btn__icon" width="13" height="13" fill="none"
