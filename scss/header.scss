@@ -20,6 +20,28 @@
   justify-content: flex-start;
 }
 
+.header__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header__watch {
+  user-select: none;
+  position: relative;
+}
+
+.header__watch__time {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #667755;
+}
+
 .header__new {
   display: flex;
   align-items: center;
@@ -172,5 +194,12 @@
   .header__new {
     padding-right: 0;
     border: none;
+  }
+}
+
+@media (max-width: $mobile) {
+  .header__title {
+    font-size: 16px;
+    text-align: center;
   }
 }

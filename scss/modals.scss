@@ -15,6 +15,19 @@
   &.active {
     display: block;
   }
+
+  &--hint {
+    .modals__body {
+      height: 390px;
+      align-items: flex-start;
+      padding-top: 42px;
+      padding-right: 22px;
+    }
+
+    .decide__box {
+      margin-top: 40px;
+    }
+  }
 }
 
 .modals__head {
@@ -33,6 +46,17 @@
   font-size: 20px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.modals__title__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  span {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
 }
 
 .modals__close {
@@ -128,6 +152,13 @@
   }
 }
 
+.modal__text {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
 @media (max-width: $mobile) {
   .modals {
     max-width: 350px;
@@ -144,5 +175,18 @@
 
   .modals__column {
     width: 48%;
+  }
+
+  .modals {
+    &--hint {
+      .modals__body {
+        height: auto;
+      }
+
+      .decide__box {
+        margin-top: 0px;
+        flex-direction: column;
+      }
+    }
   }
 }
