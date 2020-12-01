@@ -773,13 +773,27 @@
 
   .chat__col {
     display: none;
+    max-width: 100%;
     position: absolute;
     background: #fff;
     z-index: 10;
+    border-radius: 7px;
 
     &.active {
       display: block;
     }
+  }
+
+  .chat__content {
+    border-radius: 7px;
+  }
+
+  .chat__head {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .chat__body {
+    border-radius: 0 0 7px 7px;
   }
 
   .chat__burger {
