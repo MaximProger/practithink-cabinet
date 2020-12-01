@@ -41,4 +41,25 @@ $(document).ready(function () {
   $(".pannel__btn").click(function () {
     $(this).toggleClass("pannel__btn--active");
   });
+
+  // Chat Menu
+  $(".chat__menu__item").click(function (evt) {
+    evt.preventDefault();
+    $(this).toggleClass("active");
+    $(this).find(".chat__menu__list").slideToggle();
+  });
+
+  // Faivourite
+  $(".chat__body__star").click(function () {
+    $(this).toggleClass("active");
+  });
+
+  // Chat Menu
+  $("#chatMenu").click(function () {
+    $(".chat__col").slideDown();
+  });
+
+  $(".chat__col__close__btn").click(function () {
+    $(".chat__col").slideUp();
+  });
 });
