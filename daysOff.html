@@ -439,14 +439,24 @@
                           </div>
 
                           <div class="calendar__bot">
-                            <div class="calendar__radio">
-                              <input type="radio" class="cabinet__checkbox" id="publish" name="days">
-                              <label class="cabinet__label" for="publish">Только в этот день</label>
-                            </div>
+                            <div class="select days__select">
+                              <div class="select__wrapper">
+                                <div class="select__title active">
+                                  one time event
+                                </div>
+                                <svg class="select__arrow" width="16" height="10" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M0 .632C0 .507.034.385.097.281A.592.592 0 01.356.048.53.53 0 01.689.012a.563.563 0 01.295.173l6.7 7.347L14.381.185a.55.55 0 01.406-.177.552.552 0 01.402.185.665.665 0 01.17.442.666.666 0 01-.162.444L8.09 8.873a.552.552 0 01-.408.185.552.552 0 01-.408-.185L.17 1.079A.64.64 0 01.044.874.686.686 0 010 .632z"
+                                    fill="#0E80A4" /></svg>
+                              </div>
 
-                            <div class="calendar__radio">
-                              <input type="radio" class="cabinet__checkbox" id="friday" name="days">
-                              <label class="cabinet__label" for="friday">Каждую пятницу</label>
+                              <div class="select__list">
+                                <span class="select__list__item active">one time event</span>
+                                <span class="select__list__item">every Wednesday</span>
+                                <span class="select__list__item">every other week</span>
+                                <span class="select__list__item">every month</span>
+                              </div>
                             </div>
                           </div>
                         </div>

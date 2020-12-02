@@ -89,7 +89,7 @@
     justify-content: center;
     background: #f3967c;
     height: 19px;
-    width: 19px;
+    min-width: 19px;
     border-radius: 50%;
     font-weight: normal;
     font-size: 15px;
@@ -98,6 +98,7 @@
     transform: none;
     left: auto;
     right: 0;
+    padding: 0 2px;
 
     &--green {
       background: #4b7c61;
@@ -376,5 +377,11 @@
     width: 15px;
     font-size: 13px;
     top: -9px;
+
+    &--notification {
+      height: 15px;
+      width: auto;
+      min-width: 15px;
+    }
   }
 }

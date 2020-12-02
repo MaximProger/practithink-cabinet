@@ -42,7 +42,8 @@ body {
   box-sizing: border-box;
 
   &.fixed {
-    overflow-y: hidden;
+    overflow: hidden;
+    max-height: 100vh;
   }
 }
 
@@ -171,9 +172,9 @@ select {
       display: none;
     }
 
-    // .nav__subitem {
-    //   padding-left: 7px;
-    // }
+    .nav__subitem {
+      padding-left: 7px;
+    }
 
     .nav__item {
       &::before {

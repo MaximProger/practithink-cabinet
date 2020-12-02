@@ -8,6 +8,7 @@
   padding-left: 73px;
   padding-bottom: 29px;
   padding-right: 108px;
+  position: relative;
 }
 
 .days__inner {
@@ -27,22 +28,24 @@
 }
 
 .days__list {
-  pointer-events: none;
+  &--off {
+    pointer-events: none;
 
-  .days__list__title {
-    color: #aaaaaa;
-  }
+    .days__list__title {
+      color: #aaaaaa;
+    }
 
-  .days__line__wrapper {
-    overflow-y: hidden;
-  }
+    .days__line__wrapper {
+      overflow-y: hidden;
+    }
 
-  .days__item {
-    color: #aaaaaa;
-    background: #ededed;
-    &.active {
+    .days__item {
       color: #aaaaaa;
       background: #ededed;
+      &.active {
+        color: #aaaaaa;
+        background: #ededed;
+      }
     }
   }
 }
@@ -136,6 +139,8 @@
 @media (max-width: $mobile) {
   .days {
     padding: 15px;
+    padding-bottom: 100px;
+    z-index: 5;
   }
 
   .days__inner {
@@ -169,5 +174,13 @@
 
   .days__list__title {
     margin: 0 40px;
+  }
+
+  .days__select {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
   }
 }

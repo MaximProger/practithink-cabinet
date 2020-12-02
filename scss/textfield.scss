@@ -12,6 +12,21 @@
   border-radius: 7px;
 }
 
+.textfiel__cancel {
+  color: #68c2d0;
+  font-size: 14px;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s linear;
+  line-height: 1;
+  margin-left: 5px;
+
+  &:hover {
+    border-color: #68c2d0;
+    color: #68c2d0;
+  }
+}
+
 .textfield__head {
   background: #ecf7f9;
   border-radius: 7px 7px 0px 0px;
