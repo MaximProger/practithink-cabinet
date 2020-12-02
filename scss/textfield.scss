@@ -1,5 +1,11 @@
 @import "config";
 
+.textfiel__item {
+  &--hidden {
+    display: none;
+  }
+}
+
 .textfield {
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);

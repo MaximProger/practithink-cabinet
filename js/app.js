@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  // Tooltip
+  $('[data-toggle="tooltip"]').tooltip({
+    template:
+      '<div class="tooltip"><div class="tooltip-arrow tooltip-arrow--top"></div><div class="tooltip-inner"></div></div>',
+  });
+
   // Sidebar Open || Close
   $(".logo").click(function () {
     $("#sidebar").toggleClass("sidebar--hide");

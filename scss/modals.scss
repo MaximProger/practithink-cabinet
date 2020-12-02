@@ -83,6 +83,14 @@
   justify-content: center;
 }
 
+.modals__body__wrapper {
+  text-align: center;
+
+  .modals__text {
+    text-align: left;
+  }
+}
+
 .modals__row {
   display: flex;
   align-items: flex-start;

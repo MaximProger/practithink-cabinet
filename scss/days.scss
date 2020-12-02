@@ -1,0 +1,173 @@
+@import "config";
+
+.days {
+  background: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  padding-top: 29px;
+  padding-left: 73px;
+  padding-bottom: 29px;
+  padding-right: 108px;
+}
+
+.days__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.days__left {
+  max-width: 345px;
+  width: 100%;
+}
+
+.days__right {
+  max-width: 193px;
+  width: 100%;
+}
+
+.days__list {
+  pointer-events: none;
+
+  .days__list__title {
+    color: #aaaaaa;
+  }
+
+  .days__line__wrapper {
+    overflow-y: hidden;
+  }
+
+  .days__item {
+    color: #aaaaaa;
+    background: #ededed;
+    &.active {
+      color: #aaaaaa;
+      background: #ededed;
+    }
+  }
+}
+
+.days__line__wrapper {
+  max-height: 320px;
+  overflow-y: scroll;
+  padding-right: 23px;
+
+  &::-webkit-scrollbar {
+    width: 4px; /* 1 - вертикальный скроллбар */
+  }
+  &::-webkit-scrollbar {
+    &:horizontal {
+      height: 4px; /* 1 - горизонтальный скроллбар */
+    }
+  }
+  &::-webkit-scrollbar-button {
+    background: #c4c4c4; /* 2 - кнопка */
+    border-radius: 7px 7px 0 0;
+  }
+  &::-webkit-scrollbar-track {
+    background: #c4c4c4; /* 3 - трек */
+    border-radius: 0 0 7px 7px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: #c4c4c4; /* 4 – видимая часть трека */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #68c2d0;
+    border-radius: 7px;
+  }
+}
+
+.days__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+
+  &--special {
+    margin-bottom: 14px;
+    padding-right: 35px;
+    padding-left: 12px;
+  }
+}
+
+.days__list__title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #2f2f2f;
+}
+
+.days__thin {
+  display: inline-block;
+  height: 1px;
+  max-width: 18px;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.8);
+}
+
+.days__item {
+  width: 68px;
+  height: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0e80a4;
+  background: #ecf7f9;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.active {
+    color: #ffffff;
+    background: #0e80a4;
+  }
+}
+
+@media (max-width: $mobile) {
+  .days {
+    padding: 15px;
+  }
+
+  .days__inner {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .days__left {
+    max-width: 100%;
+  }
+
+  .days__right {
+    max-width: 100%;
+  }
+
+  .days__list {
+    padding-top: 30px;
+  }
+
+  .days__line {
+    &--special {
+      padding-left: 0;
+    }
+
+    justify-content: center;
+  }
+
+  .days__thin {
+    margin: 0 5px;
+  }
+
+  .days__list__title {
+    margin: 0 40px;
+  }
+}

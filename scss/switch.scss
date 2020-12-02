@@ -1,0 +1,75 @@
+@import "config";
+
+.switch {
+  padding-left: 0;
+  &.pannel__switch .custom-control-label {
+    margin-left: 47px;
+  }
+
+  &--schedule {
+    margin-top: 23px;
+    margin-bottom: 22px;
+  }
+}
+
+.switch__title {
+  font-size: 15px;
+  line-height: 20px;
+  color: #2f2f2f;
+  cursor: pointer;
+
+  &--active {
+    color: #5a5a5a;
+  }
+}
+
+.pannel__switch {
+  cursor: pointer;
+  * {
+    outline: none;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pannel__switch .custom-control-label::after {
+  top: calc(0.15rem);
+  left: calc(-42px + 2px);
+  width: 16px;
+  height: 16px;
+  background-color: #369cb7;
+}
+
+.pannel__switch .custom-control-label::before {
+  left: -42px;
+  top: 0;
+  width: 35px;
+  height: 20px;
+  pointer-events: all;
+  background: #fdfeff;
+  border: 1px solid #369cb7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.pannel__switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(0.95rem);
+}
+
+.pannel__switch .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #369cb7;
+  background-color: #369cb7;
+}

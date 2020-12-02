@@ -1,0 +1,57 @@
+@import "config";
+
+.create__schedule {
+  margin-top: 14px;
+  background: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  padding-top: 25px;
+  padding-left: 33px;
+  padding-bottom: 29px;
+  padding-right: 33px;
+}
+
+.create__schedule__item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .cabinet__item {
+    margin-bottom: 0;
+    max-width: 271px;
+    width: 100%;
+  }
+
+  .select {
+    max-width: 165px;
+    width: 100%;
+  }
+}
+
+.btn.create__schedule__btn {
+  margin-top: 27px;
+}
+
+.create__schedule__list {
+  .textfiel__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .create__schedule__item {
+    flex-wrap: wrap;
+
+    .cabinet__item {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .select {
+      max-width: 100%;
+    }
+  }
+}
