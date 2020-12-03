@@ -30,6 +30,8 @@
 @import "createSchedule";
 @import "schedule";
 @import "tooltip";
+@import "video";
+@import "pagination";
 
 body {
   min-width: 320px;
@@ -117,6 +119,15 @@ select {
     background: none;
     color: #0e80a4;
   }
+}
+
+.default__mark {
+  background: #ecf7f9;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0e80a4;
+  padding: 4px 17px;
 }
 
 .back {
@@ -604,5 +615,9 @@ select {
     .btn {
       margin: 0 !important;
     }
+  }
+
+  .default__mark {
+    font-size: 14px;
   }
 }

@@ -1,9 +1,11 @@
 $(document).ready(function () {
   // Tooltip
-  // $('[data-toggle="tooltip"]').tooltip({
-  //   template:
-  //     '<div class="tooltip"><div class="tooltip-arrow tooltip-arrow--top"></div><div class="tooltip-inner"></div></div>',
-  // });
+  if ($('[data-toggle="tooltip"]').length) {
+    $('[data-toggle="tooltip"]').tooltip({
+      template:
+        '<div class="tooltip"><div class="tooltip-arrow tooltip-arrow--top"></div><div class="tooltip-inner"></div></div>',
+    });
+  }
 
   // Sidebar Open || Close
   $(".logo").click(function () {
@@ -67,5 +69,12 @@ $(document).ready(function () {
 
   $(".chat__col__close__btn").click(function () {
     $(".chat__col").slideUp();
+  });
+
+  // Textmore
+  $(".video__text__link").click(function (evt) {
+    evt.preventDefault();
+    $(this).fadeOut();
+    $(".video__text--hidden").slideDown();
   });
 });
