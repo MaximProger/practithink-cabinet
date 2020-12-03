@@ -246,6 +246,13 @@
     }
   }
 
+  .modals__time {
+    bottom: 5px;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
   .modals__line {
     font-size: 14px;
   }
