@@ -567,11 +567,75 @@
       <div class="modal__head">
         <div class="modal__title">Add review</div>
         <button type="button" class="modal__btn">
-          <img src="./images/dest/icons/close__modal.svg" alt="Open/Close" />
+          <img src="./images/dest/icons/close__modal.svg" alt="Open/Close">
         </button>
       </div>
       <div class="modal__body">
         <form action="/" class="detail__form detail__form--reviews" name="reviewsForm">
+          <div class="contact__item rating__item col-12">
+            <div class="row col-lg-12 d-flex justify-content-around">
+              <div class="contact__wrapper col-lg-6">
+                <span class="rating__item__title">Rate product</span>
+                <div class="rating__item__wrapper">
+                  <div class="detail__stars reviews__stars cabinet__reviews__stars">
+                    <span data-star="rate-product" class="detail__star review__star review__star--1"></span>
+                    <span data-star="rate-product" class="detail__star review__star review__star--2"></span>
+                    <span data-star="rate-product" class="detail__star review__star review__star--3"></span>
+                    <span data-star="rate-product" class="detail__star review__star review__star--4"></span>
+                    <span data-star="rate-product" class="detail__star review__star review__star--5"></span>
+                  </div>
+                  <div data-star="rate-product" class="rating__item__value">
+                  </div>
+                </div>
+              </div>
+              <div class="star-wrapper col-lg-6 pl-md-4">
+                <div class="contact__wrapper">
+                  <span class="rating__item__title">Easy to use</span>
+                  <div class="rating__item__wrapper">
+                    <div class="detail__stars reviews__stars cabinet__reviews__stars">
+                      <span data-star="easy" class="detail__star review__star review__star--1"></span>
+                      <span data-star="easy" class="detail__star review__star review__star--2"></span>
+                      <span data-star="easy" class="detail__star review__star review__star--3"></span>
+                      <span data-star="easy" class="detail__star review__star review__star--4"></span>
+                      <span data-star="easy" class="detail__star review__star review__star--5"></span>
+                    </div>
+                    <div data-star="easy" class="rating__item__value">
+                    </div>
+                  </div>
+                </div>
+                <div class="contact__wrapper">
+                  <span class="rating__item__title">Quality</span>
+                  <div class="rating__item__wrapper">
+                    <div class="detail__stars reviews__stars cabinet__reviews__stars">
+                      <span data-star="quality" class="detail__star review__star review__star--1"></span>
+                      <span data-star="quality" class="detail__star review__star review__star--2"></span>
+                      <span data-star="quality" class="detail__star review__star review__star--3"></span>
+                      <span data-star="quality" class="detail__star review__star review__star--4"></span>
+                      <span data-star="quality" class="detail__star review__star review__star--5"></span>
+                    </div>
+                    <div data-star="quality" class="rating__item__value">
+                    </div>
+                  </div>
+                </div>
+                <div class="contact__wrapper">
+                  <span class="rating__item__title">Value</span>
+                  <div class="rating__item__wrapper">
+                    <div class="detail__stars reviews__stars cabinet__reviews__stars">
+                      <span data-star="value" class="detail__star review__star review__star--1"></span>
+                      <span data-star="value" class="detail__star review__star review__star--2"></span>
+                      <span data-star="value" class="detail__star review__star review__star--3"></span>
+                      <span data-star="value" class="detail__star review__star review__star--4"></span>
+                      <span data-star="value" class="detail__star review__star review__star--5"></span>
+                    </div>
+                    <div data-star="value" class="rating__item__value">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
           <div class="detail__form__wrapper row">
             <div class="contact__item col-md-6 col-12">
               <div class="contact__wrapper">
@@ -600,29 +664,16 @@
               </div>
             </div>
 
-            <div class="contact__item rating__item col-12">
-              <div class="contact__wrapper">
-                <span class="rating__item__title">Whats?</span>
-                <div class="rating__item__wrapper">
-                  <div class="detail__stars reviews__stars cabinet__reviews__stars">
-                    <span class="detail__star review__star review__star--1"></span>
-                    <span class="detail__star review__star review__star--2"></span>
-                    <span class="detail__star review__star review__star--3"></span>
-                    <span class="detail__star review__star review__star--4"></span>
-                    <span class="detail__star review__star review__star--5"></span>
-                  </div>
-                  <div class="rating__item__value">
-                  </div>
-                </div>
-              </div>
-            </div>
+
 
             <button type="submit" name="reviewsSubmit" class="btn detail__form__btn">Submit</button>
+
           </div>
         </form>
       </div>
     </div>
   </div>
+
 
   <!-- jQuery -->
   <script src="./js/include/jquery.min.js"></script>

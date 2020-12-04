@@ -124,13 +124,16 @@
     }
 
     .profile__tab__btn {
-      transform: rotate(45deg);
-      circle {
-        fill: #68c2d0;
-      }
+      background: #369cb7;
 
-      path {
-        fill: #fff;
+      .profile__tab__x {
+        &:after {
+          background: #fff;
+        }
+
+        &::before {
+          opacity: 0;
+        }
       }
     }
 
@@ -200,18 +203,63 @@
 }
 
 .profile__tab__btn {
+  width: 28.47px;
+  height: 28.47px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   padding: 0;
   line-height: 0;
-  background: none;
-  border: none;
   transition: all 0.2s linear;
+  // background: none;
+  // border: none;
+  // transition: all 0.2s linear;
 
-  circle {
-    transition: all 0.2s linear;
-  }
+  // circle {
+  //   transition: all 0.2s linear;
+  // }
 
-  path {
+  // path {
+  //   transition: all 0.2s linear;
+  // }
+
+  .profile__tab__x {
+    display: inline-block;
     transition: all 0.2s linear;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      border-radius: 7px;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      width: 2.5px;
+      height: 14px;
+      background: #369cb7;
+      transition: all 0.2s linear;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(90deg);
+      border-radius: 7px;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      width: 2.5px;
+      height: 14px;
+      background: #369cb7;
+      transition: all 0.2s linear;
+    }
   }
 }
 

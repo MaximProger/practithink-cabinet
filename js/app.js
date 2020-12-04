@@ -102,27 +102,27 @@ $(document).ready(function () {
   });
 
   // Rating
-  $(".review__star").click(function () {
-    $(".review__star").removeClass("detail__star--active");
-    $(this).addClass("detail__star--active");
+  // $(".review__star").click(function () {
+  //   $(".review__star").removeClass("detail__star--active");
+  //   $(this).addClass("detail__star--active");
 
-    if ($(this).hasClass("review__star--1")) {
-      $(".review__star").addClass("detail__star--active");
-      $(".rating__item__value").text("5.0 Excellent");
-    } else if ($(this).hasClass("review__star--2")) {
-      $(".review__star--3").addClass("detail__star--active");
-      $(".review__star--4").addClass("detail__star--active");
-      $(".review__star--5").addClass("detail__star--active");
-      $(".rating__item__value").text("4.0 Good");
-    } else if ($(this).hasClass("review__star--3")) {
-      $(".review__star--4").addClass("detail__star--active");
-      $(".review__star--5").addClass("detail__star--active");
-      $(".rating__item__value").text("3.0 Satisfactorily");
-    } else if ($(this).hasClass("review__star--4")) {
-      $(".review__star--5").addClass("detail__star--active");
-      $(".rating__item__value").text("2.0 Weakly");
-    } else {
-      $(".rating__item__value").text("1.0 Unsatisfactory");
-    }
-  });
+  //   if ($(this).hasClass("review__star--1")) {
+  //     $(".review__star").addClass("detail__star--active");
+  //     $(".rating__item__value").text("5.0 Excellent");
+  //   } else if ($(this).hasClass("review__star--2")) {
+  //     $(".review__star--3").addClass("detail__star--active");
+  //     $(".review__star--4").addClass("detail__star--active");
+  //     $(".review__star--5").addClass("detail__star--active");
+  //     $(".rating__item__value").text("4.0 Good");
+  //   } else if ($(this).hasClass("review__star--3")) {
+  //     $(".review__star--4").addClass("detail__star--active");
+  //     $(".review__star--5").addClass("detail__star--active");
+  //     $(".rating__item__value").text("3.0 Satisfactorily");
+  //   } else if ($(this).hasClass("review__star--4")) {
+  //     $(".review__star--5").addClass("detail__star--active");
+  //     $(".rating__item__value").text("2.0 Weakly");
+  //   } else {
+  //     $(".rating__item__value").text("1.0 Unsatisfactory");
+  //   }
+  // });
 });
