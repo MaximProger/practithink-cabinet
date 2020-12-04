@@ -67,6 +67,15 @@
       opacity: 1;
     }
   }
+
+  &--special {
+    font-weight: bold;
+    &:hover {
+      .nav__item__text {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .nav__icon {

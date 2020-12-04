@@ -77,4 +77,52 @@ $(document).ready(function () {
     $(this).fadeOut();
     $(".video__text--hidden").slideDown();
   });
+
+  // Сортировки
+  $(".catalog__sort__arrow").click(function () {
+    // $(".catalog__sort__list").removeClass("catalog__sort__list--active");
+    $(this).toggleClass("catalog__sort__arrow--active");
+    $(this)
+      .parent()
+      .parent()
+      .find(".catalog__sort__list")
+      .toggleClass("catalog__sort__list--active");
+  });
+
+  $(".catalog__sort__value").click(function () {
+    $(".catalog__sort__arrow").removeClass("catalog__sort__arrow--active");
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .find(".catalog__sort__list")
+      .removeClass("catalog__sort__list--active");
+
+    $(this).parent().parent().find(".catalog__sort__text").text($(this).text());
+  });
+
+  // Rating
+  $(".review__star").click(function () {
+    $(".review__star").removeClass("detail__star--active");
+    $(this).addClass("detail__star--active");
+
+    if ($(this).hasClass("review__star--1")) {
+      $(".review__star").addClass("detail__star--active");
+      $(".rating__item__value").text("5.0 Excellent");
+    } else if ($(this).hasClass("review__star--2")) {
+      $(".review__star--3").addClass("detail__star--active");
+      $(".review__star--4").addClass("detail__star--active");
+      $(".review__star--5").addClass("detail__star--active");
+      $(".rating__item__value").text("4.0 Good");
+    } else if ($(this).hasClass("review__star--3")) {
+      $(".review__star--4").addClass("detail__star--active");
+      $(".review__star--5").addClass("detail__star--active");
+      $(".rating__item__value").text("3.0 Satisfactorily");
+    } else if ($(this).hasClass("review__star--4")) {
+      $(".review__star--5").addClass("detail__star--active");
+      $(".rating__item__value").text("2.0 Weakly");
+    } else {
+      $(".rating__item__value").text("1.0 Unsatisfactory");
+    }
+  });
 });
