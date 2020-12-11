@@ -32,6 +32,24 @@
   &--big {
     max-width: 913px;
   }
+
+  &--special {
+    .modals__head {
+      background: #fff;
+      box-shadow: none;
+    }
+
+    .registration__reset__title {
+      margin-top: 20px;
+    }
+  }
+}
+
+.modal__head__logo {
+  position: absolute;
+  left: 39px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .modals__head {
@@ -219,6 +237,16 @@
 
 .modals__radio {
   margin: 0 12px;
+}
+
+.modal__footer {
+  height: 156px;
+  width: 100%;
+  background: #68c2d0;
+  border-radius: 0px 0px 7px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: $mobile) {

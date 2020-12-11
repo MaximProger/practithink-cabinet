@@ -101,28 +101,78 @@ $(document).ready(function () {
     $(this).parent().parent().find(".catalog__sort__text").text($(this).text());
   });
 
-  // Rating
-  // $(".review__star").click(function () {
-  //   $(".review__star").removeClass("detail__star--active");
-  //   $(this).addClass("detail__star--active");
+  // Inputs Focus
+  $(".resitration__input").focus(function () {
+    $(this).parent().find(".contact__icon").addClass("active");
+  });
 
-  //   if ($(this).hasClass("review__star--1")) {
-  //     $(".review__star").addClass("detail__star--active");
-  //     $(".rating__item__value").text("5.0 Excellent");
-  //   } else if ($(this).hasClass("review__star--2")) {
-  //     $(".review__star--3").addClass("detail__star--active");
-  //     $(".review__star--4").addClass("detail__star--active");
-  //     $(".review__star--5").addClass("detail__star--active");
-  //     $(".rating__item__value").text("4.0 Good");
-  //   } else if ($(this).hasClass("review__star--3")) {
-  //     $(".review__star--4").addClass("detail__star--active");
-  //     $(".review__star--5").addClass("detail__star--active");
-  //     $(".rating__item__value").text("3.0 Satisfactorily");
-  //   } else if ($(this).hasClass("review__star--4")) {
-  //     $(".review__star--5").addClass("detail__star--active");
-  //     $(".rating__item__value").text("2.0 Weakly");
-  //   } else {
-  //     $(".rating__item__value").text("1.0 Unsatisfactory");
-  //   }
-  // });
+  $(".resitration__input").blur(function () {
+    $(this).parent().find(".contact__icon").removeClass("active");
+  });
+
+  // Validation Registration/login
+  $(".registration__form").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+      },
+      email: {
+        required: true,
+      },
+      teacher: {
+        required: true,
+      },
+      password: {
+        required: true,
+        minlength: 6,
+      },
+    },
+    messages: {
+      name: {
+        required: "Name is required",
+        minlength: "The name must be at least 2 characters",
+      },
+      teacher: "Please enter your teacher name",
+      password: {
+        required: "Password is required",
+        minlength: "Password must be at least 6 characters",
+      },
+      email: {
+        required: "Email is required",
+        email: "Email address format required",
+      },
+    },
+  });
+
+  // Registration Select
+  $("#registrationForm").submit(function () {
+    if (
+      $("#registrationSelect").find(".select__title").hasClass("active") ==
+      false
+    ) {
+      $("#registrationSelect").addClass("error");
+      $("#teacher-error").text("Please select");
+
+      return false;
+    } else {
+      $("#registrationSelect").removeClass("error");
+      $("#teacher-error").text("");
+
+      return true;
+    }
+  });
+
+  $(".registration__list__item").click(function () {
+    if (
+      $("#registrationSelect").find(".select__title").hasClass("active") ==
+      false
+    ) {
+      $("#registrationSelect").addClass("error");
+      $("#teacher-error").text("Please select");
+    } else {
+      $("#registrationSelect").removeClass("error");
+      $("#teacher-error").text("");
+    }
+  });
 });

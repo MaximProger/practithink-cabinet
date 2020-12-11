@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="./css/include/animate.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/include/bootstrap.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/app.min.css">
+  <title>Title</title>
+</head>
+
+<body>
+
+  <div class="regiatration">
+    <div class="container">
+      <div class="registration__inner">
+        <div class="registration__modal">
+          <div class="registration__modal__wrapper">
+
+            <div class="registration__modal__left">
+
+              <img src="./images/dest/registration/logo.svg" alt="PractiThink" class="registration__logo">
+
+
+              <div class="registrationl__left__content">
+                <div class="registration__left__text">
+                  Don’t have account?<br>
+                  Sign up now
+                </div>
+                <button type="button" class="btn btn--opacity registration__left__btn">
+                  Sign up now
+                </button>
+                <div class="registration__left__bot">
+                  Did not recieve the activation mail?
+                  <a href="#" class="registration__left__link">
+                    Resend Activation email
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="registration__modal__right">
+              <form id="loginForm" name="loginForm" action="/" class="registration__form">
+                <h1 class="registration__title">
+                  Login to your Account
+                </h1>
+
+                <div class="registration__right__body">
+
+                  <div class="registration__item__list">
+
+                    <div class="registration__item">
+                      <div class="contact__wrapper">
+                        <svg class="contact__icon" width="18" height="16" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path class="contact__icon__stroke"
+                            d="M13.39 5.551L9.835 8.413a1.853 1.853 0 01-2.288 0L3.962 5.55" stroke="#979797"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="contact__icon__stroke" clip-rule="evenodd"
+                            d="M4.74.917h7.857a4.13 4.13 0 012.983 1.325 4.18 4.18 0 011.105 3.086v5.44a4.18 4.18 0 01-1.105 3.087 4.13 4.13 0 01-2.983 1.325H4.74c-2.433 0-4.073-1.98-4.073-4.412v-5.44C.667 2.896 2.307.917 4.74.917z"
+                            stroke="#979797" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                        <input type="email"
+                          class="resitration__input form-control contact__input payment__input payment__input--special"
+                          name="email" id="email" placeholder="E-mail" required>
+                      </div>
+                      <label id="email-error" for="email" class="error registration__input__message">
+
+                      </label>
+                    </div>
+
+                    <div class="registration__item">
+                      <div class="contact__wrapper">
+                        <svg class="contact__icon" width="18" height="14" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path class="contact__icon__stroke" clip-rule="evenodd"
+                            d="M11.634 7.044a2.635 2.635 0 11-5.269 0 2.635 2.635 0 015.27 0z" stroke="#979797"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="contact__icon__stroke" clip-rule="evenodd"
+                            d="M8.998 13.13c3.174 0 6.076-2.283 7.71-6.086C15.074 3.241 12.172.96 8.998.96h.004c-3.174 0-6.076 2.282-7.71 6.085 1.634 3.803 4.536 6.085 7.71 6.085h-.004z"
+                            stroke="#979797" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                        <input type="password"
+                          class="resitration__input form-control contact__input payment__input payment__input--special"
+                          name="password" id="password" placeholder="Password" required>
+                      </div>
+                      <label id="password-error" for="password" class="error registration__input__message">
+
+                      </label>
+                    </div>
+                  </div>
+
+
+                  <div class="registration__checkbox__item">
+                    <div class="cabinet__checkbox__item registration__checkbox__item">
+                      <input type="checkbox" class="cabinet__checkbox" id="remember" name="remember" required />
+                      <label class="cabinet__label registration__label" for="remember">
+                        <span class="registration__label__wrapper">
+                          Remember me
+                          <a href="#" class="cabinet__link">Forgot your password?</a>
+                        </span>
+                      </label>
+                    </div>
+                    <label id="remember-error" for="remember" class="error registration__input__message agree-error">
+
+                    </label>
+                  </div>
+
+
+
+
+                </div>
+
+                <div class="registration__right__bot">
+                  <button type="submit" name="loginSubmit" id="loginSubmit" class="btn registration__submit">
+                    Login
+                  </button>
+                  <div class="registration__or">
+                    <div class="registration__or__line"></div>
+                    <div class="registration__or__text">or</div>
+                    <div class="registration__or__line"></div>
+                  </div>
+                  <div class="registration__social">
+                    <a href="#" class="registration__social__item">
+                      <img src="./images/dest/registration/fa.svg" alt="Facebook">
+                    </a>
+
+                    <a href="#" class="registration__social__item">
+                      <img src="./images/dest/registration/twit.svg" alt="twitter">
+                    </a>
+
+                    <a href="#" class="registration__social__item">
+                      <img src="./images/dest/registration/google.svg" alt="google">
+                    </a>
+                  </div>
+                </div>
+
+
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="./js/include/jquery.min.js"></script>
+  <script src="./js/include/jquery-validation.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

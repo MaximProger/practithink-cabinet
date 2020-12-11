@@ -1,3 +1,4 @@
+@import "config";
 @import "nav";
 @import "header";
 @import "select";
@@ -34,6 +35,7 @@
 @import "profile";
 @import "catalog";
 @import "detail";
+@import "registration";
 @import "modalWhite";
 @import "cabinet";
 
@@ -115,6 +117,12 @@ select {
 
   &--white {
     color: #68c2d0;
+    background: #fff;
+    border-color: #fff;
+  }
+
+  &--whiteOpacity {
+    color: #fff !important;
     background: #fff;
     border-color: #fff;
   }
