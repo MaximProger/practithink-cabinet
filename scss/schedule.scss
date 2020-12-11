@@ -384,4 +384,15 @@
       min-width: 15px;
     }
   }
+
+  .schedule__title__wrapper {
+    .sort__right {
+      flex-direction: row;
+      justify-content: space-between;
+      .select {
+        width: 49% !important;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
