@@ -111,39 +111,41 @@ $(document).ready(function () {
   });
 
   // Validation Registration/login
-  $(".registration__form").validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2,
+  if ($(".registration__form").length) {
+    $(".registration__form").validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        email: {
+          required: true,
+        },
+        teacher: {
+          required: true,
+        },
+        password: {
+          required: true,
+          minlength: 6,
+        },
       },
-      email: {
-        required: true,
+      messages: {
+        name: {
+          required: "Name is required",
+          minlength: "The name must be at least 2 characters",
+        },
+        teacher: "Please enter your teacher name",
+        password: {
+          required: "Password is required",
+          minlength: "Password must be at least 6 characters",
+        },
+        email: {
+          required: "Email is required",
+          email: "Email address format required",
+        },
       },
-      teacher: {
-        required: true,
-      },
-      password: {
-        required: true,
-        minlength: 6,
-      },
-    },
-    messages: {
-      name: {
-        required: "Name is required",
-        minlength: "The name must be at least 2 characters",
-      },
-      teacher: "Please enter your teacher name",
-      password: {
-        required: "Password is required",
-        minlength: "Password must be at least 6 characters",
-      },
-      email: {
-        required: "Email is required",
-        email: "Email address format required",
-      },
-    },
-  });
+    });
+  }
 
   // Registration Select
   $("#registrationForm").submit(function () {

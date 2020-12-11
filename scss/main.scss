@@ -37,6 +37,7 @@
 @import "detail";
 @import "registration";
 @import "modalWhite";
+@import "dashboard";
 @import "cabinet";
 
 body {
@@ -45,7 +46,7 @@ body {
   font-size: 15px;
   position: relative;
   line-height: 20px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Oxygen", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
 
@@ -226,6 +227,10 @@ select {
 
 .blue__text {
   color: #0e80a4;
+}
+
+.darkgreen__text {
+  color: #4b7c61;
 }
 
 .green__text {

@@ -53,6 +53,10 @@
       }
     }
   }
+
+  &--sm {
+    max-width: 107px;
+  }
 }
 
 .select__icon {
@@ -177,4 +181,12 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+}
+
+@media (max-width: $mobile) {
+  .select {
+    &--sm {
+      max-width: 100%;
+    }
+  }
 }

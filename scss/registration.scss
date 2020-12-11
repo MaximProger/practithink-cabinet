@@ -445,11 +445,19 @@ label.error {
 }
 
 @media (max-width: $mobile) {
+  .regiatration {
+    height: 100%;
+    padding: 40px 0;
+  }
+
   .registration__modal {
     max-height: none;
     height: fit-content;
     width: 90%;
     max-width: 100%;
+    position: static;
+    transform: none;
+    width: 100%;
   }
 
   .registration__modal__wrapper {
