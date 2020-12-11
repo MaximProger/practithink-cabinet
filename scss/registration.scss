@@ -61,6 +61,13 @@
       color: #b4b0b0;
     }
   }
+
+  .cabinet__checkbox:checked + .cabinet__label::before {
+    border-color: #68c2d0;
+    background-color: #68c2d0;
+    background-image: url("../images/dest/registration/check.svg");
+    background-size: auto;
+  }
 }
 
 .registration__modal {
@@ -447,7 +454,9 @@ label.error {
 @media (max-width: $mobile) {
   .regiatration {
     height: 100%;
-    padding: 40px 0;
+    padding: 100px 0;
+    min-height: 100vh;
+    overflow: hidden;
   }
 
   .registration__modal {

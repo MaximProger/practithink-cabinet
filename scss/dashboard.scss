@@ -506,12 +506,23 @@
   }
 }
 
+.dashboard__stats__arrow {
+  height: 9.45px;
+  width: 15.77px;
+  min-height: 9.45px;
+  min-width: 15.77px;
+}
+
 .bell.dashboard__bell {
   pointer-events: all;
   margin-right: 0;
 }
 
 @media (max-width: $mobile) {
+  .dashboard__intro__wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
   .dashboard__stats__header {
     flex-direction: column;
     align-items: flex-start;
