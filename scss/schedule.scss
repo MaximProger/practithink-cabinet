@@ -14,7 +14,7 @@
 }
 
 .schedule__pannel__bg {
-  background: rgba(104, 194, 208, 0.1);
+  background: #0e80a4;
   border-radius: 7px;
   height: 49px;
   width: 100%;
@@ -43,8 +43,8 @@
 
 .schedule__pannel__item {
   font-size: 15px;
-  line-height: 20px;
-  color: #5a5a5a;
+  line-height: 19px;
+  color: #ffffff;
   text-align: center;
   max-width: 51px;
   width: 100%;
@@ -72,8 +72,7 @@
   }
 
   &--done {
-    color: #8c8c8c;
-    pointer-events: none;
+    color: #ffffff;
   }
 }
 
@@ -82,6 +81,9 @@
   top: -12px;
   left: 50%;
   transform: translate(-50%, 0);
+  box-shadow: 0 0 0 1px #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
 
   &--notification {
     display: flex;
@@ -325,6 +327,15 @@
 .schedule__modal__image {
   text-align: center;
   margin-top: 85px;
+}
+
+.schedule__pannel__btn {
+  &:hover {
+    border-color: #fff;
+    path {
+      fill: #fff;
+    }
+  }
 }
 
 @media (max-width: $mobile) {

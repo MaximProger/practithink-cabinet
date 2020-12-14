@@ -460,13 +460,9 @@ label.error {
   }
 
   .registration__modal {
-    max-height: none;
-    height: fit-content;
-    width: 90%;
-    max-width: 100%;
-    position: static;
-    transform: none;
     width: 100%;
+    height: 100%;
+    max-height: none;
   }
 
   .registration__modal__wrapper {
@@ -475,9 +471,9 @@ label.error {
 
   .registration__logo {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    max-width: 80px;
+    top: 30px;
+    left: auto;
+    right: 25px;
   }
 
   .registration__modal__left {
@@ -485,13 +481,17 @@ label.error {
     max-width: 100%;
     justify-content: center;
     background: #68c2d0;
-    padding: 20px 0;
+    padding: 25px 0;
     order: 2;
+    min-height: auto;
+    position: static;
+    height: fit-content;
   }
 
   .registration__modal__right {
-    height: 480px;
-    padding: 20px 0;
+    height: 100%;
+    padding-top: 81px;
+    padding-bottom: 11px;
   }
 
   .registration__left__text {
@@ -508,5 +508,33 @@ label.error {
 
   .registration__forgot {
     padding: 0 15px;
+  }
+
+  .registration__right__bot {
+    padding-top: 0;
+  }
+
+  .registration__or {
+    margin-top: 15px;
+    margin-bottom: 11px;
+  }
+
+  .registration__back {
+    top: 30px;
+    left: 25px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2f2f2f;
+    font-style: normal;
+    font-weight: normal;
+
+    &:hover {
+      opacity: 0.8;
+      color: #2f2f2f;
+    }
+  }
+
+  .registration__form {
+    max-width: 335px;
   }
 }
