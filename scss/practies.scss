@@ -25,6 +25,10 @@
       box-shadow: inset 0px 0px 0px 2px #68c2d0;
       background: #68c2d0;
     }
+
+    .classroom__detail__item__number {
+      background: #68c2d0;
+    }
   }
 
   &--green {
@@ -34,6 +38,10 @@
       box-shadow: inset 0px 0px 0px 2px#9DD765;
       background: #9dd765;
     }
+
+    .classroom__detail__item__number {
+      background: #9dd765;
+    }
   }
 
   &--orange {
@@ -41,6 +49,10 @@
 
     .practies__item__left {
       box-shadow: inset 0px 0px 0px 2px #ffb27d;
+      background: #ffb27d;
+    }
+
+    .classroom__detail__item__number {
       background: #ffb27d;
     }
   }

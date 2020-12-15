@@ -318,6 +318,23 @@
   color: #f7fcf7;
 }
 
+.classroom__detail__item__number {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2f2f2f;
+  color: #fff;
+  font-weight: 500;
+  z-index: 2;
+}
+
 @media (max-width: $mobile) {
   .classroom__table {
     overflow-x: scroll;
@@ -382,10 +399,48 @@
   }
 
   .classroom__detail__item {
+    .practies__top__item {
+      &--mark {
+        display: none;
+      }
+    }
+
+    .practies__item__left {
+      display: none;
+    }
+
+    .practices__btn {
+      top: 0;
+    }
+
     &--pupil {
       .practies__top__right {
         padding-left: 10px;
       }
+
+      .practies__item__left {
+        display: none;
+      }
+
+      .practies__top {
+        padding-top: 30px;
+      }
     }
+  }
+
+  .classroom__detail__item__number {
+    display: flex;
+  }
+
+  .classroom__table__wrapper {
+    position: relative;
+    height: 240px;
+  }
+
+  .classroom__table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 110%;
   }
 }
