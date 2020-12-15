@@ -10,6 +10,10 @@
   &--video {
     margin-top: 19px;
   }
+
+  &--classroom {
+    margin-top: 248px;
+  }
 }
 
 .pagination__wrapper {
@@ -40,6 +44,10 @@
     background: #68c2d0;
     color: #fff;
   }
+}
+
+.pagination__main {
+  padding-bottom: 30px !important;
 }
 
 @media (max-width: $mobile) {

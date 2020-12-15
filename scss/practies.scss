@@ -95,6 +95,100 @@
       display: flex;
     }
   }
+
+  &--classroom {
+    &.active {
+      height: 75px;
+
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.15), inset 0 0 0 2px #fccc53;
+
+      .practies__item__left {
+        box-shadow: inset 0 0 0 2px #fccc53;
+        background: #fccc53;
+      }
+
+      .practies__top__item {
+        &--special {
+          .practies__top__item__value {
+            display: block;
+          }
+        }
+
+        &--mark {
+          .practies__top__item__name {
+            opacity: 1;
+            background: #caebd8;
+            color: #4b7c61;
+          }
+        }
+      }
+
+      .practies__classroom__value {
+        display: none;
+
+        &--active {
+          display: inline-block;
+        }
+      }
+
+      .practies__item__left__value {
+        opacity: 1;
+      }
+
+      .practies__item__left__icon {
+        opacity: 0;
+      }
+
+      &:hover {
+      }
+    }
+
+    .practies__subject {
+      color: #2f2f2f;
+    }
+
+    .practies__top__item {
+      color: #2f2f2f;
+      &--mark {
+        margin-right: 38px;
+        .practies__top__item__name {
+          font-size: 15px;
+          line-height: 20px;
+          color: #ffffff;
+          display: inline-block;
+          background: #68c2d0;
+          border-radius: 20px;
+          padding: 3px 8px;
+          opacity: 0;
+          transition: all 0.2s linear;
+        }
+      }
+
+      &--special {
+        width: auto;
+      }
+    }
+
+    &:hover {
+      .practies__top__item__name {
+        opacity: 1;
+      }
+
+      .practies__item__left__value {
+        opacity: 1;
+      }
+
+      .practies__item__left__icon {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.practies__classroom__value {
+  &--active {
+    display: none;
+  }
 }
 
 .practices__btn {
@@ -410,7 +504,9 @@
   }
 
   &:hover {
-    color: #68c2d0;
+    .practices__options__text {
+      color: #68c2d0;
+    }
   }
 }
 
@@ -418,6 +514,8 @@
   font-size: 14px;
   line-height: 19px;
   margin-left: 6.6px;
+  color: #2f2f2f;
+  transition: all 0.2s linear;
 }
 
 @media (max-width: $mobile) {
@@ -427,6 +525,19 @@
 
     &.active {
       height: auto;
+    }
+
+    &--classroom {
+      .practies__top__item {
+        &--mark {
+          margin-right: 0;
+
+          .practies__top__item__name {
+            font-size: 14px;
+            padding: 3px 5px;
+          }
+        }
+      }
     }
   }
 
@@ -563,5 +674,9 @@
 
   .practices__options {
     top: 70px;
+  }
+
+  .practies__top__item__name {
+    font-size: 14px;
   }
 }

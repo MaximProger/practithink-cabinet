@@ -25,6 +25,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  .back {
+    position: static;
+    transform: none;
+  }
 }
 
 .cabinet__intro__title {
@@ -37,6 +42,14 @@
 
 .cabinet__item {
   margin-bottom: 26px;
+
+  &--classroom {
+    margin-bottom: 20px;
+
+    .select {
+      max-width: 165px;
+    }
+  }
 }
 
 .cabinet__input {
@@ -453,6 +466,14 @@
     .cabinet__purchases__download__btn {
       &:last-child {
         margin-left: 0px;
+      }
+    }
+  }
+
+  .cabinet__item {
+    &--classroom {
+      .select {
+        max-width: 100%;
       }
     }
   }

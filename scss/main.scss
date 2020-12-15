@@ -38,6 +38,7 @@
 @import "registration";
 @import "modalWhite";
 @import "dashboard";
+@import "classroom";
 @import "cabinet";
 
 body {
@@ -155,6 +156,10 @@ select {
     opacity: 0.8;
     color: #5a5a5a;
   }
+
+  img {
+    margin-right: 8px;
+  }
 }
 
 .btn.hint__btn {
@@ -235,6 +240,10 @@ select {
 
 .green__text {
   color: #5ba47c;
+
+  &--2 {
+    color: #9dd765;
+  }
 }
 
 .red__text {
