@@ -68,6 +68,11 @@
   &::placeholder {
     color: #b4b0b0;
   }
+
+  &--textarea {
+    resize: none;
+    height: 118px !important;
+  }
 }
 
 .cabinet__btn__wrapper {
@@ -358,6 +363,22 @@
     &:last-child {
       margin-left: 22px;
     }
+  }
+}
+
+.cabinet__purchases__status__value {
+  display: inline-block;
+  padding: 3px;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffa46e;
+  background: rgba(255, 178, 125, 0.1);
+  border-radius: 4px;
+
+  &.active {
+    color: #9dd765;
+    background: rgba(157, 215, 101, 0.1);
   }
 }
 
