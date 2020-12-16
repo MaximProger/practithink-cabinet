@@ -356,6 +356,10 @@
   filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
 }
 
+.profile__upload__btn__text {
+  margin-left: 3px;
+}
+
 @media (max-width: $mobile) {
   .profile__tab__line {
     flex-direction: column;
@@ -369,5 +373,22 @@
   .profile__tab__link {
     width: 100%;
     text-align: center;
+  }
+
+  .profile__upload__img {
+    display: none;
+  }
+
+  .profile__upload__title {
+    display: none;
+  }
+
+  .profile__upload__text {
+    display: none;
+  }
+
+  .profile__upload {
+    height: fit-content;
+    padding: 20px 0;
   }
 }

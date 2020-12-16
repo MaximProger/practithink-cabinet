@@ -274,4 +274,27 @@
     top: auto;
     bottom: -40%;
   }
+
+  .myshop__item {
+    &--profit {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .myshop__intro__title {
+    margin-bottom: 0;
+  }
+
+  .myshop__profit {
+    width: fit-content;
+  }
+
+  .myshop__items__wrapper {
+    margin-bottom: 20px;
+    .myshop__item {
+      margin-bottom: 10px;
+    }
+  }
 }
