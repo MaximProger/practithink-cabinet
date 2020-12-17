@@ -177,4 +177,19 @@ $(document).ready(function () {
       $("#teacher-error").text("");
     }
   });
+
+  if (window.innerWidth <= 767) {
+    // Высота таблицы в classroomAllStudents
+    let neededHeightClassroom = $(".classroom__table").innerHeight() + 10;
+    $(".classroom__table__wrapper").css({
+      height: neededHeightClassroom,
+    });
+
+    // Высота таблицы в studentProfile
+    let neededHeightStudentProfile =
+      $(".student__profile__table").innerHeight() + 57;
+    $(".student__profile__table__inner").css({
+      height: neededHeightStudentProfile,
+    });
+  }
 });

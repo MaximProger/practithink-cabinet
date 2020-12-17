@@ -1,0 +1,119 @@
+@import "config";
+
+.info__block {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  width: 185px;
+  padding: 12px 14px;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.done {
+    .info__circle {
+      background: #9dd665;
+    }
+  }
+
+  &.mistake {
+    .info__circle {
+      background: #f0947b;
+    }
+  }
+
+  &.need {
+    .info__circle {
+      background: #f0c24f;
+    }
+  }
+}
+
+.info__circle {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: #2f2f2f;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.info__number {
+  color: #2f2f2f;
+  margin-right: 16px;
+}
+
+.info__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.info__progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info__progress__text {
+  width: fit-content;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.info__progress__item {
+  border-radius: 9px;
+  width: 88%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info__progress__line {
+  background: #ededed;
+  height: 100%;
+  width: 25%;
+
+  &.done {
+    background: #9dd765;
+  }
+
+  &.need {
+    background: #fccc53;
+  }
+
+  &.mistake {
+    background: #f3967c;
+  }
+
+  &:first-child {
+    border-radius: 9px 0 0 9px;
+  }
+
+  &:last-child {
+    border-radius: 0px 9px 9px 0px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .info__progress {
+    flex-wrap: wrap;
+  }
+
+  .info__progress__item {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

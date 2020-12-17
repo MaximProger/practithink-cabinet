@@ -382,6 +382,20 @@
   }
 }
 
+.cabinet__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 40px;
+  background: #4b7c61;
+  border-radius: 19.5px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
 @media (max-width: $tablet) {
 }
 

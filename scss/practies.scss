@@ -57,6 +57,58 @@
     }
   }
 
+  &--purple {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 2px #eecdfe;
+
+    .practies__item__left {
+      box-shadow: inset 0px 0px 0px 2px #eecdfe;
+      background: #eecdfe;
+    }
+
+    .classroom__detail__item__number {
+      background: #eecdfe;
+    }
+  }
+
+  &--yellow {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 2px #fccc53;
+
+    .practies__item__left {
+      box-shadow: inset 0px 0px 0px 2px #fccc53;
+      background: #fccc53;
+    }
+
+    .classroom__detail__item__number {
+      background: #fccc53;
+    }
+  }
+
+  &--violet {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 2px #9ea7c6;
+
+    .practies__item__left {
+      box-shadow: inset 0px 0px 0px 2px #9ea7c6;
+      background: #9ea7c6;
+    }
+
+    .classroom__detail__item__number {
+      background: #9ea7c6;
+    }
+  }
+
+  &--red {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15), inset 0px 0px 0px 2px #ee623c;
+
+    .practies__item__left {
+      box-shadow: inset 0px 0px 0px 2px #ee623c;
+      background: #ee623c;
+    }
+
+    .classroom__detail__item__number {
+      background: #ee623c;
+    }
+  }
+
   &:hover {
     .practies__item__left__value {
       opacity: 0;
