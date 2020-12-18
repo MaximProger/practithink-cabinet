@@ -180,15 +180,14 @@
                   <div class="cabinet__title__wrapper">
                     <a href="" class="back">
                       <img src="./images/dest/icons/back.svg" alt="Back" class="back__img" />
-                      Back to Student profile
+                      Back to all students
                     </a>
                     <h1 class="cabinet__title">Student profile</h1>
                   </div>
                 </div>
 
-                <!-- Test -->
-                <div class="test">
-                  <div class="test__inner">
+                <div class="student__profile">
+                  <div class="student__profile__inner">
 
                     <div class="student__profile__user">
                       <img src="./images/dest/student__profile/avatar.svg" alt="avatar" class="student__profile__img">
@@ -197,67 +196,224 @@
                       </span>
                     </div>
 
-                    <div class="cabinet__time__wrapper">
-                      <span class="cabinet__time">
-                        20:34
-                      </span>
-                    </div>
+                    <div class="sort student__profile__sort">
+                      <div class="sort__inner">
+                        <div class="sort__left">
+                          <div class="select">
+                            <div class="select__wrapper">
+                              <div class="select__title">
+                                Subject
+                              </div>
+                              <svg class="select__arrow" width="16" height="10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0 .632C0 .507.034.385.097.281A.592.592 0 01.356.048.53.53 0 01.689.012a.563.563 0 01.295.173l6.7 7.347L14.381.185a.55.55 0 01.406-.177.552.552 0 01.402.185.665.665 0 01.17.442.666.666 0 01-.162.444L8.09 8.873a.552.552 0 01-.408.185.552.552 0 01-.408-.185L.17 1.079A.64.64 0 01.044.874.686.686 0 010 .632z"
+                                  fill="#0E80A4" />
+                              </svg>
+                            </div>
 
-                    <div class="progress__wrapper progress__wrapper--result test__progress">
-                      <a href="#" class="rogress__item active"></a>
-                      <a href="#" class="rogress__item wrong"></a>
-                      <a href="#" class="rogress__item active"></a>
-                      <a href="#" class="rogress__item active"></a>
-                      <a href="#" class="rogress__item active"></a>
-                      <a href="#" class="rogress__item active"></a>
-                    </div>
-
-                    <div class="test__wrapper">
-                      <p class="test__text">
-                        How much more does an antique mahogany armoire cost than antique marbletop vanilla?
-                      </p>
-
-                      <div class="test__item__wrapper">
-                        <div class="test__item">
-                          <div class="test__item__left">
-                            Mahogany Armoire
+                            <div class="select__list">
+                              <span class="select__list__item">Math</span>
+                              <span class="select__list__item">Geometry</span>
+                            </div>
                           </div>
-                          <div class="test__item__right">
-                            <img src="./images/dest/student__profile/time.svg" class="test__item__img" alt="time">
-                            14:10
+
+                          <div class="select">
+                            <div class="select__wrapper">
+                              <div class="select__title">
+                                Grade
+                              </div>
+                              <svg class="select__arrow" width="16" height="10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M0 .632C0 .507.034.385.097.281A.592.592 0 01.356.048.53.53 0 01.689.012a.563.563 0 01.295.173l6.7 7.347L14.381.185a.55.55 0 01.406-.177.552.552 0 01.402.185.665.665 0 01.17.442.666.666 0 01-.162.444L8.09 8.873a.552.552 0 01-.408.185.552.552 0 01-.408-.185L.17 1.079A.64.64 0 01.044.874.686.686 0 010 .632z"
+                                  fill="#0E80A4" />
+                              </svg>
+                            </div>
+
+                            <div class="select__list">
+                              <span class="select__list__item">2-3grade</span>
+                              <span class="select__list__item">4-5grade</span>
+                            </div>
                           </div>
+
+                        </div>
+                        <div class="sort__right">
+
+                          <div class="select">
+                            <div class="select__wrapper">
+                              <div class="select__title">
+                                <img src="./images/dest/icons/timetable--small.svg" alt="timetable"
+                                  class="select__icon">
+                                This week
+                              </div>
+                              <img class="select__arrow" src="./images/dest/arrow.svg" alt="Arrow" />
+                            </div>
+
+                            <div class="select__list">
+                              <span class="select__list__item">This day</span>
+                              <span class="select__list__item active">This week</span>
+                              <span class="select__list__item">This month</span>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
+                    </div>
+
+                    <div class="student__profile__table__inner">
+                      <div class="student__profile__table__wrapper">
+                        <div class="student__profile__table student__profile__table--special">
+
+                          <div class="student__profile__table__header">
+                            <div class="row">
+                              <div class="student__profile__table__header__col col-1">
+
+                              </div>
+                              <div class="student__profile__table__header__col col-1">
+                                Subject
+                              </div>
+                              <div class="student__profile__table__header__col col-4">
+
+                              </div>
+                              <div class="student__profile__table__header__col col-2">
+                                Time
+                              </div>
+                              <div class="student__profile__table__header__col col-2">
+                                Questions
+                              </div>
+                              <div class="student__profile__table__header__col col-1">
+                                Mistake
+                              </div>
+                              <div class="student__profile__table__header__col col-1">
+                                Rating
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="student__profile__table__body">
+
+                            <div class="student__profile__table__line">
+                              <div class="row">
+                                <div class="student__profile__table__body__col col-1">
+                                  12.08
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  Math
+                                </div>
+                                <div class="student__profile__table__body__col col-4">
+                                  8-c add and substract
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  32 min
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  54
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  0
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  <div class="student__profile__improve">
+                                    A+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="student__profile__table__line">
+                              <div class="row">
+                                <div class="student__profile__table__body__col col-1">
+                                  12.07
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  English
+                                </div>
+                                <div class="student__profile__table__body__col col-4">
+                                  8-c add and substract
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  32 min
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  54
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  2
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  <div class="student__profile__improve">
+                                    A-
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="student__profile__table__line">
+                              <div class="row">
+                                <div class="student__profile__table__body__col col-1">
+                                  12.08
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  Logic
+                                </div>
+                                <div class="student__profile__table__body__col col-4">
+                                  8-c add and substract
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  32 min
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  54
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  7
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  <div class="student__profile__improve">
+                                    B
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="student__profile__table__line">
+                              <div class="row">
+                                <div class="student__profile__table__body__col col-1">
+                                  12.06
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  Logic
+                                </div>
+                                <div class="student__profile__table__body__col col-4">
+                                  8-c add
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  32 min
+                                </div>
+                                <div class="student__profile__table__body__col col-2">
+                                  54
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  7
+                                </div>
+                                <div class="student__profile__table__body__col col-1">
+                                  <div class="student__profile__improve student__profile__improve--down">
+                                    C
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
 
 
+                        </div>
+                      </div>
                     </div>
 
                   </div>
                 </div>
-
-                <div class="cabinet__btn__wrapper test__btn__wrapper">
-                  <button type="button" class="btn btn--opacity cabinet__btn  cabinet__btn__edit">
-                    <svg class="cabinet__btn__icon" width="26" height="11" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.52 5.5h23.4m-23.4 0l3.6 4.5m-3.6-4.5L5.12 1" stroke="#0E80A4" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <span class="cabinet__btn__text">Previous</span>
-                  </button>
-                  <span class="test__count">
-                    1<span class="text__gray">/6</span>
-                  </span>
-                  <button type="button"
-                    class="btn btn--opacity cabinet__btn  cabinet__btn__edit cabinet__btn__edit--reverse">
-                    <span class="cabinet__btn__text">Next</span>
-                    <svg class="cabinet__btn__icon" width="26" height="11" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.52 5.5h23.4m-23.4 0l3.6 4.5m-3.6-4.5L5.12 1" stroke="#0E80A4" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </button>
-                </div>
-
 
 
 

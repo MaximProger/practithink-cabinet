@@ -39,6 +39,29 @@
   }
 }
 
+.student__profile__table {
+  &--special {
+    text-align: center;
+
+    .student__profile__table__header__col {
+      &:nth-child(2) {
+        text-align: left;
+      }
+    }
+
+    .student__profile__table__body__col {
+      &:first-child {
+        text-align: center;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        text-align: left;
+      }
+    }
+  }
+}
+
 .student__profile__table__wrapper {
   margin-top: 17px;
   margin-bottom: 37px;
