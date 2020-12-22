@@ -12,6 +12,45 @@
   width: 810px;
   padding: 35px 40px;
   border-radius: 7px;
+
+  &--practice {
+    // padding: 38px 23px;
+    padding: 0 !important;
+    max-width: 526px;
+
+    .modal__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      padding-top: 40px;
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+
+    .modal__title {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    .modal__btn {
+      top: 10px;
+      right: 10px;
+    }
+
+    .modals__btn__wrapper {
+      margin-top: 30px;
+      margin-bottom: 23px;
+    }
+
+    .cabinet__checkbox:checked + .cabinet__label::before {
+      border-color: #68c2d0;
+      background-color: #68c2d0;
+      background-image: url("../images/dest/registration/check.svg");
+      background-size: auto;
+    }
+  }
 }
 
 .reviews__stars {
@@ -59,9 +98,86 @@
   }
 }
 
+.modal__practice__line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 48px;
+  border-bottom: 1px solid #68c2d0;
+  margin: 0 23px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .classroom__id__value {
+    display: inline-block;
+    margin-left: 12px;
+  }
+
+  .classroom__avatar {
+    margin-left: 24px;
+  }
+}
+
+.modal__practice__list {
+  max-height: 288px;
+  overflow-y: scroll;
+  margin-right: 3px;
+
+  &::-webkit-scrollbar {
+    width: 4px; /* 1 - вертикальный скроллбар */
+  }
+  &::-webkit-scrollbar {
+    &:horizontal {
+      height: 4px; /* 1 - горизонтальный скроллбар */
+    }
+  }
+  &::-webkit-scrollbar-button {
+    background: #fff; /* 2 - кнопка */
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff; /* 3 - трек */
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: #fff; /* 4 – видимая часть трека */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #68c2d0;
+    border-radius: 100px;
+  }
+}
+
+.modal__practice__status {
+  margin-left: 12px;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.modal__practice__description {
+  margin-left: 22px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+}
+
 @media (max-width: $tablet) {
   .modal__window {
     width: 90%;
     padding: 20px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .modal__window {
+    &--practice {
+      .modal__head {
+        flex-direction: column;
+      }
+
+      .modal__title {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
