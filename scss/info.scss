@@ -116,4 +116,20 @@
     width: 100%;
     margin-top: 15px;
   }
+
+  .info__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .info__item {
+    width: 50%;
+    margin-bottom: 15px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
 }

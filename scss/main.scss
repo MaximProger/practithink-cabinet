@@ -59,6 +59,9 @@ body {
   &.fixed {
     overflow: hidden;
     max-height: 100vh;
+    touch-action: none;
+    -ms-touch-action: none;
+    position: relative;
   }
 }
 
@@ -343,7 +346,7 @@ select {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba($color: #5a5a5a, $alpha: 0.3);
+  background: rgba($color: #5a5a5a, $alpha: 0.6);
   z-index: 102;
 
   &.active {

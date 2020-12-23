@@ -218,4 +218,14 @@
       width: 100%;
     }
   }
+
+  .sort.student__profile__sort {
+    .sort__left {
+      justify-content: space-between;
+
+      .select {
+        width: 49%;
+      }
+    }
+  }
 }
