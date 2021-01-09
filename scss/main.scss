@@ -44,7 +44,12 @@
 @import "studentProfile";
 @import "info";
 @import "test";
+@import "notification";
 @import "cabinet";
+
+b {
+  font-weight: bold;
+}
 
 body {
   min-width: 320px;

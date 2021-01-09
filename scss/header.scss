@@ -421,6 +421,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--big {
+    .header__settings__text {
+      margin-left: 6px;
+    }
+  }
 }
 
 .header__settings__text {
