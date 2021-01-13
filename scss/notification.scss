@@ -361,18 +361,56 @@
   line-height: 18px;
 }
 
+.notififcation__item__info__wrapper {
+  &--end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .notififcation__item__name__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
 @media (max-width: $mobile) {
   .notififcation__item__date {
     display: none;
   }
 
+  .notififcation__item__circle {
+    display: none;
+  }
+
+  .notification__body__line {
+    display: none;
+  }
+
   .notififcation__item {
-    height: 170px;
+    height: 150px;
+    position: relative;
+
+    &:hover {
+      background: #fff;
+    }
   }
 
   .notififcation__item__right {
+    display: none;
     flex-direction: column;
-    margin-left: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    background: #e3f1f2;
+    border-radius: 0 7px 7px 0;
+    box-shadow: -4px 0px 4px -4px rgba(0, 0, 0, 0.2);
+
+    &.active {
+      display: flex;
+    }
   }
 
   .notififcation__item__action {
@@ -380,17 +418,19 @@
     width: 70px;
 
     &--accept {
-      border-radius: 0 7px 0px 0;
+      border-radius: 0 7px 0 0;
+      // border-bottom: 1px solid #2f2f2f;
     }
 
     &--decline {
-      border-radius: 0 0px 7px 0;
+      border-radius: 0 0 7px 0;
     }
   }
 
   .notififcation__item__about {
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 10px;
   }
 
   .notififcation__item__left {
@@ -408,13 +448,12 @@
   }
 
   .notififcation__item__line__left {
-    max-width: none;
-    width: fit-content;
+    display: none;
   }
 
   .notififcation__item__excellent {
     margin-right: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 
   .notification__body__line {
@@ -463,5 +502,33 @@
     &:last-child {
       width: 100%;
     }
+  }
+
+  .notififcation__item__info__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+    &--end {
+      align-items: flex-end;
+
+      .notififcation__item__name__wrapper {
+        display: block;
+      }
+    }
+  }
+
+  .notififcation__item__star {
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+
+  .notififcation__item__excellent {
+    margin-top: 5px;
+  }
+
+  .notififcation__item__info {
+    margin-top: 10px;
   }
 }
